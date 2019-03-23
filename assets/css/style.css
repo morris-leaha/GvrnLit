@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    background-color: #efefef;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: rgb(79, 79, 79);
+    font-size: 1.1rem;
+    color: #efefef;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+.card {
+    box-shadow: 2px 6px 20px 0px rgba(53, 53, 53, 0.31);
+}
+
+.user-photo {
+    box-shadow: 0px 6px 14px 0px #0000002e;
+}
+
+.match-photo {
+    height: 90px;
+    width: 90px;
+    box-shadow: 0px 6px 14px 0px #0000002e;
+}
+
+.match-links a:link {
+    color: r#424242;
+}
+
+.match-links a:visited {
+    color: #424242;
+    text-decoration: none;
+}
+
+.match-links a:hover {
+    color: #929292;
+    text-decoration: none;
+}
+
+.match-links a:active {
+    color: #929292;
+    text-decoration: none;
+}
+
+.quiz-btn:hover {
+    transform: translateY(1px);
+}
+
+.quiz-btn:active {
+    transform: translateY(3px);
+}
+
+.sticky-footer {
+    flex-shrink: 0;
+    background: rgb(79, 79, 79);
+    text-align: center;
+    font-size: 0.65rem;
+    color: #efefef;
+}
+
+.footer-nav {
+    margin: 1.5rem;
+}
+
+.footer-links {
+    font-size: 1rem;
+    color: #efefef;
+}
