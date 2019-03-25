@@ -215,10 +215,52 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <!-- Display Candidate Name -->
-                            <h2 id="candidate-name"></h2>
-                            <!-- Display Candidate Photo -->
-                            <img id="candidate-img" class="img-fluid" src="" alt="">
+                            <div class="card text-center">
+                                <!-- Display Candidate Card -->
+                                <!-- Display results in descending order (based on match percentage) -->
+                                <!-- Card Body is a link to take user to see the comparison between questions for specific candidate -->
+                                <a href="#">
+                                    <div class="card-body">
+                                        <div>
+                                            <!-- Display Candidate Image -->
+                                            <img src="../assets/images/placeholder-image.png" id="candidateImg" class="match-photo img-fluid rounded-circle"
+                                                alt="Image Place Holder" />
+                                            <!-- Display Candidate Name -->
+                                            <h5 id="candidateName" class="match-name card-title mt-3">Match
+                                                Name</h5>
+                                            <!-- Display Match Percentage to Candidate -->
+                                            <h6 id="matchPercent" class="match-percentage card-subtitle mt-3">100%
+                                                Match</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Individual Candidate Links -->
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <!-- Individual Candidate Twitter -->
+                                        <div class="col match-links match-twitter">
+                                            <a href="#" id="indCanTwitter"><i class="fab fa-twitter"></i></a>
+                                        </div>
+                                        <!-- Individual Candidate Website -->
+                                        <div class="col match-links match-website">
+                                            <a href="#" id="indCanWebsite"><i class="fas fa-globe"></i></a>
+                                        </div>
+                                        <!-- Individual Candidate News -->
+                                        <div class="col match-links match-news">
+                                            <a href="#" id="indCanNews"><i class="far fa-newspaper"></i></a>
+                                        </div>
+                                        <!-- Individual Candidate Instagram -->
+                                        <div class="col match-links match-insta">
+                                            <a href="#" id="indCanInsta"><i class="fab fa-instagram"></i></a>
+                                        </div>
+                                        <!-- Link to Individual Candidate Profile -->
+                                        <!-- This is where user can see more information on each candidate -->
+                                        <div class="col match-links match-ellipsis">
+                                            <a href="#" id="indCanProfile"><i class="fas fa-ellipsis-h"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <!-- See All Candidates w/ Tooltip -->
