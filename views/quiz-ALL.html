@@ -40,7 +40,7 @@
             <!-- NAVBAR LINKS -->
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto">
-                    
+
                 </ul>
                 <!-- NAVBAR USER DROPDOWN MENU -->
                 <div id="user-dropdown" class="dropdown">
@@ -76,7 +76,164 @@
     <div class="container">
 
         <main>
-            
+            <!-- QUESTIONS -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card text-center mt-3 mb-3">
+                        <div class="card-body">
+                            <label for="q1" class="mx-auto"><i class="fas fa-graduation-cap"></i></label>
+                            <p class="question-text">Actual question will go here</p>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-up"></i></button>
+                                </div>
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-down"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card text-center mt-3 mb-3">
+                        <div class="card-body">
+                            <label for="q1" class="mx-auto"><i class="fas fa-graduation-cap"></i></label>
+                            <p class="question-text">Actual question will go here</p>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-up"></i></button>
+                                </div>
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-down"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card text-center mt-3 mb-3">
+                        <div class="card-body">
+                            <label for="q1" class="mx-auto"><i class="fas fa-graduation-cap"></i></label>
+                            <p class="question-text">Actual question will go here</p>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-up"></i></button>
+                                </div>
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-down"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card text-center mt-3 mb-3">
+                        <div class="card-body">
+                            <label for="q1" class="mx-auto"><i class="fas fa-graduation-cap"></i></label>
+                            <p class="question-text">Actual question will go here</p>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-up"></i></button>
+                                </div>
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-down"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card text-center mt-3 mb-3">
+                        <div class="card-body">
+                            <label for="q1" class="mx-auto"><i class="fas fa-graduation-cap"></i></label>
+                            <p class="question-text">Actual question will go here</p>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-up"></i></button>
+                                </div>
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-down"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card text-center mt-3 mb-3">
+                        <div class="card-body">
+                            <label for="q1" class="mx-auto"><i class="fas fa-graduation-cap"></i></label>
+                            <p class="question-text">Actual question will go here</p>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-up"></i></button>
+                                </div>
+                                <div class="col">
+                                    <button><i class="far fa-thumbs-down"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="submitQuiz">
+                        <button type="submit" class="btn btn-secondary btn-block submit-quiz-btn mb-5" id="submit"
+                            data-toggle="modal" data-target="#matchModal">Submit <i class="far fa-check-circle"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL -->
+            <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="topMatchResult"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="topMatchResult">Your Top Presidential Candidate</h5>
+                            <!-- Close "X" button -->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Display Candidate Name -->
+                            <h2 id="candidate-name"></h2>
+                            <!-- Display Candidate Photo -->
+                            <img id="candidate-img" class="img-fluid" src="" alt="">
+                        </div>
+                        <div class="modal-footer">
+                            <!-- Close button -->
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <!-- Save Results w/ Tooltip -->
+                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
+                                title="Log In/Sign Up to See All Results">
+                                Save Results
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </main>
     </div>
 
