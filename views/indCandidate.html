@@ -52,7 +52,7 @@
                         <li id="user-dropdown" class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user-circle fa-lg"></i> John<span id="nav-username"></span>
+                                <i class="fas fa-user-circle fa-lg"></i> User<span id="nav-username"></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="profile.html" id="profile"><i class="fas fa-user-cog"></i>
@@ -74,8 +74,41 @@
     <div class="container">
 
         <main>
-            
+            <!-- INDIVIDUAL CANDIDATE CARD -->
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-12">
+                    <div class="indCand-profile mt-4">
+                        <div class="text-center">
+                            <!-- CANDIDATE IMAGE -->
+                            <img src="../assets/images/placeholder-image.png" class="indCand-photo img-fluid rounded-circle"
+                                alt="Image Place Holder" />
+                            <!-- CANDIDATE NAME -->
+                            <h3 class=" mt-3" id="profile-indCand-name">Candidate Name</h3>
+                            <!-- CANDIDATE PARTY -->
+                            <h6 class=" mt-3" id="profile-indCand-party">Candidate Party</h6>
+                        </div>
+                        <!-- Individual Candidate Links -->
+                        <div class="text-center mt-3">
+                            <div class="row">
+                                <!-- Individual Candidate Twitter -->
+                                <div class="col match-links match-twitter">
+                                    <a href="#" id="indCanTwitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <!-- Individual Candidate Instagram -->
+                                <div class="col match-links match-insta">
+                                    <a href="#" id="indCanInsta" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                </div>
+                                <!-- Individual Candidate Website -->
+                                <div class="col match-links match-website">
+                                    <a href="#" id="indCanWebsite" title="Personal Website"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+
     </div>
 
     <!-- FOOTER -->
@@ -90,7 +123,7 @@
                     <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i class="fab fa-github fa-lg"></i></a>
                 </div>
                 <div class="col">
-                    <a href="#" class="footer-links">Contact Us</a>
+                    <a href="#" class="footer-links">Contact</a>
                 </div>
             </div>
             <!-- FOOTER COPYRIGHT -->
