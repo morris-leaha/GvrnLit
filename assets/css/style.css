@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     /* background-color: #efefef; default grey background color*/
-    background-color: #3e839a;
+    background-color: white;
 }
 
 body {
@@ -9,13 +9,25 @@ body {
     flex-direction: column;
 }
 
-nav {
-    background: rgb(79, 79, 79);
-    font-size: 1.1rem;
+.home-pg-nav {
+    background: #244691;
+    box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
 }
 
 .container {
     flex: 1 0 auto;
+}
+
+.carousel {
+    box-shadow: 2px 6px 20px 0px rgba(53, 53, 53, 0.31);
+}
+
+h4 {
+    color: #d0222f;
+}
+
+.fa {
+    color: #2d3d9e;
 }
 
 .card {
@@ -80,10 +92,20 @@ nav {
 
 .sticky-footer {
     flex-shrink: 0;
-    background: rgb(79, 79, 79);
+    background: #244691;
+    box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
     text-align: center;
     font-size: 0.65rem;
     color: #efefef;
+}
+
+.footer-links {
+    font-size: 1rem;
+    color: #efefef;
+}
+
+.footer-nav {
+    margin: 1.5rem;
 }
 
 #keys {
@@ -106,20 +128,7 @@ nav {
     color: crimson;
 }
 
-.footer-nav {
-    margin: 1.5rem;
-}
-
 /* want - to change color of the submit button nice-to-have */
 .submitQuiz {
     color: #59b300;
-}
-
-h3 {
-    color: #cd5757;
-}
-
-.footer-links {
-    font-size: 1rem;
-    color: #efefef;
 }
