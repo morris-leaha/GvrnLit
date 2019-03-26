@@ -148,6 +148,12 @@ h3, h4, h5 {
     border-color: rgba(0, 0, 0, 0.72);
 }
 
+/* IND CANDIDATE HTML */
+
+.indCand-photo {
+    box-shadow: 0px 6px 14px 0px #0000002e;
+}
+
 /* FOOTER SECTION */
 
 .sticky-footer {
