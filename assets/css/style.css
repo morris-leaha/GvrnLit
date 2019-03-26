@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
-    background-color: #efefef;
+    /* background-color: #efefef; default grey background color*/
+    background-color: #3e839a;
 }
 
 body {
@@ -67,8 +68,37 @@ nav {
     color: #efefef;
 }
 
+#keys {
+    /* padding for the keys and WHITE colored background of the container */
+    background: white;
+    padding-left: 9em;
+    padding-right: 9em;
+}
+
+/* want to possibly highlight link text in green for matching results or just keep green % */
+/* a {
+   color: #59b300;
+} */
+
+/* Key colors */
+.fa-thumbs-up {
+    color: #59b300;
+}
+.fa-thumbs-down {
+    color: crimson;
+}
+
 .footer-nav {
     margin: 1.5rem;
+}
+
+/* want - to change color of the submit button nice-to-have */
+.submitQuiz {
+    color: #59b300;
+}
+
+h3 {
+    color: #cd5757;
 }
 
 .footer-links {
