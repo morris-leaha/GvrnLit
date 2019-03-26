@@ -9,9 +9,24 @@ body {
     flex-direction: column;
 }
 
-.home-pg-nav {
+/* INDEX.HTML */
+.home-pg-nav, nav {
     background: #244691;
     box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
+}
+
+.nav-link:link {
+    color: #efefef;
+}
+
+.nav-link:visited {
+    color: #efefef;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #9a9b9e;
+    text-decoration: none;
 }
 
 .container {
@@ -22,13 +37,15 @@ body {
     box-shadow: 2px 6px 20px 0px rgba(53, 53, 53, 0.31);
 }
 
-h4 {
+h3, h4, h5 {
     color: #d0222f;
 }
 
 .fa {
     color: #2d3d9e;
 }
+
+/* PROFILE.HTML */
 
 .card {
     box-shadow: 2px 6px 20px 0px rgba(53, 53, 53, 0.31);
@@ -53,12 +70,12 @@ h4 {
 }
 
 .candidate-card:hover {
-    background-color: rgba(141, 141, 141, 0.247);
+    background-color: rgba(183, 62, 62, 0.35);
     text-decoration: none;
 }
 
 .candidate-card:active {
-    background-color: rgba(141, 141, 141, 0.541);
+    background-color: rgba(208, 63, 63, 0.6);;
     transform: translateY(1px);
     text-decoration: none;
 }
@@ -73,14 +90,32 @@ h4 {
 }
 
 .match-links a:hover {
-    color: #adadad;
+    color: rgba(183, 62, 62, 0.973);
     text-decoration: none;
 }
 
 .match-links a:active {
-    color: #929292;
+    color: rgb(126, 42, 42);
     text-decoration: none;
 }
+
+.take-quiz-btn {
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+.take-quiz-btn:hover {
+    background-color: rgb(130, 48, 48);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+.take-quiz-btn:active {
+    background-color: rgb(130, 48, 48);
+    border-color: rgba(0, 0, 0, 0.72);
+    transform: translateY(1px);
+}
+
+/* QUIZ.HTML */
 
 .quiz-btn:hover {
     transform: translateY(1px);
@@ -88,24 +123,6 @@ h4 {
 
 .quiz-btn:active {
     transform: translateY(3px);
-}
-
-.sticky-footer {
-    flex-shrink: 0;
-    background: #244691;
-    box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
-    text-align: center;
-    font-size: 0.65rem;
-    color: #efefef;
-}
-
-.footer-links {
-    font-size: 1rem;
-    color: #efefef;
-}
-
-.footer-nav {
-    margin: 1.5rem;
 }
 
 #keys {
@@ -131,4 +148,42 @@ h4 {
 /* want - to change color of the submit button nice-to-have */
 .submitQuiz {
     color: #59b300;
+}
+
+/* FOOTER SECTION */
+
+.sticky-footer {
+    flex-shrink: 0;
+    background: #244691;
+    box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
+    text-align: center;
+    font-size: 0.65rem;
+    color: #8ea3cd;
+}
+
+.footer-links:link {
+    font-size: 1rem;
+    color: #8ea3cd;
+}
+
+.footer-links:visited {
+    font-size: 1rem;
+    color: #8ea3cd;
+    text-decoration: none;
+}
+
+.footer-links:hover {
+    font-size: 1rem;
+    color: rgba(255,255,255,.75);
+    text-decoration: none;
+}
+
+.footer-links:active {
+    font-size: 1rem;
+    color: #8ea3cd;
+    text-decoration: none;
+}
+
+.footer-nav {
+    margin: 1.5rem;
 }
