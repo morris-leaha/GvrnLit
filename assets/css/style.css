@@ -137,17 +137,24 @@ h3, h4, h5 {
    color: #59b300;
 } */
 
-/* Key colors */
+/*  colors */
 .fa-thumbs-up {
-    color: #59b300;
+    color: #78a749;
 }
+
 .fa-thumbs-down {
-    color: crimson;
+    color: rgba(183, 62, 62, 1);
 }
 
 /* want - to change color of the submit button nice-to-have */
-.submitQuiz {
-    color: #59b300;
+.submit-quiz-btn {
+    background-color: rgb(200, 47, 56);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+.submit-quiz-btn:hover {
+    background-color: rgb(158, 27, 39);
+    border-color: rgba(0, 0, 0, 0.72);
 }
 
 /* FOOTER SECTION */
