@@ -61,6 +61,7 @@ VALUES (	"SOCIAL ISSUES", "Should Congress create a path to citizenship for ille
 INSERT INTO Candidate_Position(	Issue, Question, Position, First_Name, Last_Name, Candidate)	
 VALUES (	"SOCIAL ISSUES", "Should the federal government continue to fund Planned Parenthood?","yes","CORY","BOOKER ","CORY BOOKER ");
 INSERT INTO Candidate_Position(	Issue, Question, Position, First_Name, Last_Name, Candidate)	
+
 VALUES (	"CRIME AND PUBLIC SAFETY", "Should the U.S. impose additional sanctions on Russia in retaliation for its aggressive action in Syria and the Ukraine?","yes","PETE","BUTTIGIEG","PETE BUTTIGIEG");
 INSERT INTO Candidate_Position(	Issue, Question, Position, First_Name, Last_Name, Candidate)	
 VALUES (	"CRIME AND PUBLIC SAFETY", "Do you support Pres. Trump's decision to withdraw from the 2015 Iran nuclear agreement?","","PETE","BUTTIGIEG","PETE BUTTIGIEG");
