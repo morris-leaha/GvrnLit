@@ -45,11 +45,11 @@ app.get("/api/questions", function(req, res){
   res.json(candidatesArr);
 })
 
-app.post("/api/users", function(req, res){
+app.get("/api/users", function(req, res){
   res.json(usersArr);
 })
 
-app.get("/api/users", function(req, res){
+app.post("/api/users", function(req, res){
   res.json(usersArr);
 })
   

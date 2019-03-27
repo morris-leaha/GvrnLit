@@ -25,7 +25,7 @@ var usersArr = [
             "no",
             "yes"
         ]
-    }
+    },
 ];
 
 module.exports = usersArr;
