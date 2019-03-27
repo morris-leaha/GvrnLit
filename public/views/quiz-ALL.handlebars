@@ -79,7 +79,7 @@
                         <div class="card-body">
                             <label for="q1" class="mx-auto"><i class="fa fa-credit-card fa-4x"></i></label>
                             <h3> Topic </h3>
-                            <h6 class="question-text" id="question">Actual question will go here</h6>
+                            <h6 class="question-text">{{#each questions}}{{/each}}</h6>
                             <div class="row justify-content-center">
                                 <div class="col">
                                     <button><i class="far fa-thumbs-up fa-2x"></i></button>
@@ -92,7 +92,8 @@
                     </div>
                 </div>
             </div>
-
+            
+{{!-- 
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
@@ -191,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- SUBMIT BUTTON -->
             <div class="row justify-content-center">
@@ -318,7 +319,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <!-- Our JS File -->
-    <script src="../assets/js/quiz.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

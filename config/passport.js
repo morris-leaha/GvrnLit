@@ -2,7 +2,7 @@ var db = require("../models");
 var LocalStrategy = require("passport-local");
 var bcrypt = require("bcrypt");
 
-module.exports = (function(passort){
+module.exports = (function(passport){
 
   passport.use(new LocalStrategy(
     function(username, password, done) {
