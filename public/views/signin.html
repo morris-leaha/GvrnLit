@@ -42,19 +42,21 @@
                             <hr>
                         </div>
                         <div class="card-body user-signin-div">
-                            <form>
+                            <form action="/login" method="POST">
                                 <div class="form-row">
                                     <!-- EMAIL -->
-                                    <div class="form-group col">
+                                    <label>Username:</label>
+                                    <input type="text" name="username"/>
+                                    <!-- <div class="form-group col">
                                         <label for="userEmail">Email</label>
                                         <input type="email" class="form-control" id="userEmail" placeholder="someone@email.com">
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="form-row">
                                     <!-- PASSWORD -->
                                     <div class="form-group col">
                                         <label for="userPassword">Password</label>
-                                        <input type="password" id="userPassword" class="form-control" aria-describedby="passwordHelpText">
+                                        <input type="password" name="password" id="userPassword" class="form-control" aria-describedby="passwordHelpText">
                                         <small id="passwordHelpText" class="form-text text-muted">
                                             Your password must be 8-20 characters long, contain letters and numbers,
                                             and
@@ -64,7 +66,7 @@
                                     </div>
                                 </div>
                                 <!-- SIGN-IN BUTTON -->
-                                <button type="submit" class="btn btn-secondary sign-in-btn" id="signInBtn">Sign In</button>
+                                <button type="submit" value="Log In" class="btn btn-secondary sign-in-btn" id="signInBtn">Sign In</button>
                             </form>
                             <!-- REDIRECTS -->
                             <div class="mt-3 login-redirects">
