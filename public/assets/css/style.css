@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     /* background-color: #efefef; default grey background color*/
-    background-color: #3e839a;
+    background-color: white;
 }
 
 body {
@@ -9,14 +9,43 @@ body {
     flex-direction: column;
 }
 
-nav {
-    background: rgb(79, 79, 79);
-    font-size: 1.1rem;
+/* INDEX.HTML */
+.home-pg-nav, nav {
+    background: #244691;
+    box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
+}
+
+.nav-link:link {
+    color: #efefef;
+}
+
+.nav-link:visited {
+    color: #efefef;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #9a9b9e;
+    text-decoration: none;
 }
 
 .container {
     flex: 1 0 auto;
 }
+
+.carousel {
+    box-shadow: 2px 6px 20px 0px rgba(53, 53, 53, 0.31);
+}
+
+h3, h4, h5 {
+    color: #d0222f;
+}
+
+.fa {
+    color: #2d3d9e;
+}
+
+/* PROFILE.HTML */
 
 .card {
     box-shadow: 2px 6px 20px 0px rgba(53, 53, 53, 0.31);
@@ -41,12 +70,12 @@ nav {
 }
 
 .candidate-card:hover {
-    background-color: rgba(141, 141, 141, 0.247);
+    background-color: rgba(183, 62, 62, 0.35);
     text-decoration: none;
 }
 
 .candidate-card:active {
-    background-color: rgba(141, 141, 141, 0.541);
+    background-color: rgba(208, 63, 63, 0.6);;
     transform: translateY(1px);
     text-decoration: none;
 }
@@ -61,14 +90,32 @@ nav {
 }
 
 .match-links a:hover {
-    color: #adadad;
+    color: rgba(183, 62, 62, 0.973);
     text-decoration: none;
 }
 
 .match-links a:active {
-    color: #929292;
+    color: rgb(126, 42, 42);
     text-decoration: none;
 }
+
+.take-quiz-btn {
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+.take-quiz-btn:hover {
+    background-color: rgb(130, 48, 48);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+.take-quiz-btn:active {
+    background-color: rgb(130, 48, 48);
+    border-color: rgba(0, 0, 0, 0.72);
+    transform: translateY(1px);
+}
+
+/* QUIZ.HTML */
 
 .quiz-btn:hover {
     transform: translateY(1px);
@@ -78,48 +125,75 @@ nav {
     transform: translateY(3px);
 }
 
-.sticky-footer {
-    flex-shrink: 0;
-    background: rgb(79, 79, 79);
-    text-align: center;
-    font-size: 0.65rem;
-    color: #efefef;
-}
-
-#keys {
-    /* padding for the keys and WHITE colored background of the container */
-    background: white;
-    padding-left: 9em;
-    padding-right: 9em;
-}
-
 /* want to possibly highlight link text in green for matching results or just keep green % */
 /* a {
    color: #59b300;
 } */
 
-/* Key colors */
 .fa-thumbs-up {
-    color: #59b300;
+    color: #78a749;
 }
+
 .fa-thumbs-down {
-    color: crimson;
+    color: rgba(183, 62, 62, 1);
+}
+
+.submit-quiz-btn {
+    background-color: rgb(200, 47, 56);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+.submit-quiz-btn:hover {
+    background-color: rgb(158, 27, 39);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+/* IND CANDIDATE HTML */
+
+.indCand-photo {
+    box-shadow: 0px 6px 14px 0px #0000002e;
+}
+
+/* COMPARISON HTML */
+
+.progress-bar {
+    background: #cc0624;
+}
+
+/* FOOTER SECTION */
+
+.sticky-footer {
+    flex-shrink: 0;
+    background: #244691;
+    box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
+    text-align: center;
+    font-size: 0.65rem;
+    color: #8ea3cd;
+}
+
+.footer-links:link {
+    font-size: 1rem;
+    color: #8ea3cd;
+}
+
+.footer-links:visited {
+    font-size: 1rem;
+    color: #8ea3cd;
+    text-decoration: none;
+}
+
+.footer-links:hover {
+    font-size: 1rem;
+    color: rgba(255,255,255,.75);
+    text-decoration: none;
+}
+
+.footer-links:active {
+    font-size: 1rem;
+    color: #8ea3cd;
+    text-decoration: none;
 }
 
 .footer-nav {
     margin: 1.5rem;
-}
-
-/* want - to change color of the submit button nice-to-have */
-.submitQuiz {
-    color: #59b300;
-}
-
-h3 {
-    color: #cd5757;
-}
-
-.footer-links {
-    font-size: 1rem;
-    color: #efefef;
 }
