@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
     <!-- LINK TO GOOGLE FONTS -->
     <!-- LINK TO FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
 
     <!-- Page Title -->
     <title>GvrnLit</title>
@@ -27,8 +27,8 @@
         <nav class="navbar navbar-expand-md navbar-dark p-3 px-md-4 mb-3">
             <!-- NAVBAR BRAND -->
             <a class="navbar-brand" href="index.html">
-                <img src="../assets/images/gavel-stars_transparent.png" width="140" height="60"
-                    class="d-inline-block align-top" alt="logo">
+                <img src="../assets/images/gavel-stars_transparent.png" width="140" height="60" class="d-inline-block align-top"
+                    alt="logo">
             </a>
 
             <!-- NAVBAR TOGGLER BUTTON -->
@@ -43,28 +43,26 @@
 
                 </ul>
                 <!-- NAVBAR USER DROPDOWN MENU -->
-                <div id="user-dropdown" class="dropdown">
+                <!-- <div id="user-dropdown" class="dropdown">
                     <ul class="navbar-nav mr-auto">
                         <li id="user-dropdown" class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user-circle fa-lg"></i> User<span id="nav-username"></span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                                <!-- LINK TO USER PROFILE.HTML -->
-                                <a class="dropdown-item" href="profile.html" id="profile"><i
-                                        class="fas fa-user-cog"></i>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown"> -->
+                <!-- LINK TO USER PROFILE.HTML -->
+                <!-- <a class="dropdown-item" href="profile.html" id="profile"><i class="fas fa-user-cog"></i>
                                     Profile</a>
-                                <div class="dropdown-divider"></div>
-                                <!-- LINK TO SIGN OUT -->
-                                <a class="dropdown-item" href="index.html" id="sign-out"><i
-                                        class="fas fa-sign-out-alt"></i>
+                                <div class="dropdown-divider"></div> -->
+                <!-- LINK TO SIGN OUT -->
+                <!-- <a class="dropdown-item" href="index.html" id="sign-out"><i class="fas fa-sign-out-alt"></i>
                                     Sign
                                     Out</a>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             </div>
         </nav>
@@ -79,16 +77,17 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
+                            <i class="fa fa-fingerprint fa-4x mb-2"></i>
+                            <h5>Crime & Public Safety</h5>
                             <label for="q1" class="h5 question-text">Should the U.S. impose additional sanctions on
                                 Russia in retaliation for its aggressive action in Syria and the Ukraine?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id="q1"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b1" class="thumbs-btn border-0 rounded" data-id="0"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no"  id="q2"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b2" class="thumbs-btn border-0 rounded" data-id="0"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -101,16 +100,17 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q2" class="h5 question-text">Do you support Pres. Trump's decision to withdraw
-                                from the 2015 Iran nuclear agreement?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-fingerprint fa-4x mb-2"></i>
+                            <h5>Crime & Public Safety</h5>
+                            <label for="q2" class="h5 question-text">Should the federal government expand background
+                                checks for firearms sales?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q3"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b3" class="thumbs-btn border-0 rounded" data-id="1"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q4"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b4" class="thumbs-btn border-0 rounded" data-id="1"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -123,16 +123,17 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q3" class="h5 question-text">Should the federal government expand background
-                                checks for firearms sales?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-fingerprint fa-4x mb-2"></i>
+                            <h5>Crime & Public Safety</h5>
+                            <label for="q3" class="h5 question-text">Should the government enforce federal marijuana
+                                laws in states that have legalized marijuana?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes"id ="q5"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b5" class="thumbs-btn border-0 rounded" data-id="2"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q6"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b6" class="thumbs-btn border-0 rounded" data-id="2"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -145,16 +146,17 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q4" class="h5 question-text">Should the government enforce federal marijuana
-                                laws in states that have legalized marijuana?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-hand-holding-usd fa-4x mb-2"></i>
+                            <h5>Economy</h5>
+                            <label for="q4" class="h5 question-text">Should the federal government raise the minimum
+                                wage?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes"id ="q7"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b7" class="thumbs-btn border-0 rounded" data-id="3"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no"id ="q8"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b8" class="thumbs-btn border-0 rounded" data-id="3"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -167,16 +169,18 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q5" class="h5 question-text">Should the federal government privatize some or all
-                                of Social Security?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-hand-holding-usd fa-4x mb-2"></i>
+                            <h5>Economy</h5>
+                            <label for="q5" class="h5 question-text">Should the federal government increase funding for
+                                transportation infrastructure, such as road repair and highway expansion?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes"id ="q9"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b9" class="thumbs-btn border-0 rounded" data-id="4"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no"id ="q10"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b10" class="thumbs-btn border-0 rounded" data-id="4"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -189,16 +193,18 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q6" class="h5 question-text">Should the federal government raise the minimum
-                                wage?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-hand-holding-usd fa-4x mb-2"></i>
+                            <h5>Economy</h5>
+                            <label for="q6" class="h5 question-text">Do you believe the 'Trump tax plan' bill passed in
+                                December 2017 helps middle income citizens?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes"id ="q11"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b11" class="thumbs-btn border-0 rounded" data-id="5"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q12"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b12" class="thumbs-btn border-0 rounded" data-id="5"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -211,16 +217,18 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q7" class="h5 question-text">Should the federal government increase funding for
-                                transportation infrastructure, such as road repair and highway expansion?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-leaf fa-4x mb-2"></i>
+                            <h5>Energy & Environment</h5>
+                            <label for="q7" class="h5 question-text">Do you agree with President Trump on withdrawing
+                                from the Paris climate agreement?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q13"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b13" class="thumbs-btn border-0 rounded" data-id="6"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q14"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b14" class="thumbs-btn border-0 rounded" data-id="6"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -233,16 +241,18 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q8" class="h5 question-text">Do you believe the 'Trump tax plan' bill passed in
-                                December 2017 helps middle income citizens?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-leaf fa-4x mb-2"></i>
+                            <h5>Energy & Environment</h5>
+                            <label for="q8" class="h5 question-text">Should the federal government do more to combat
+                                climate change by providing subsidies for renewable energy?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q15"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b15" class="thumbs-btn border-0 rounded" data-id="7"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q16"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b16" class="thumbs-btn border-0 rounded" data-id="7"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -255,16 +265,18 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q9" class="h5 question-text">Should the federal government allow student loan
-                                payments to be reduced based on income?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-medkit fa-4x mb-2"></i>
+                            <h5>Healthcare</h5>
+                            <label for="q9" class="h5 question-text">Should the federal government ban abortion after
+                                20 weeks gestation, with exceptions for cases of rape/incest and health complications?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q17"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b17" class="thumbs-btn border-0 rounded" data-id="8"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q18"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b18" class="thumbs-btn border-0 rounded" data-id="8"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -277,16 +289,18 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q10" class="h5 question-text">Should the federal government continue to
-                                subsidize the domestic production of oil?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-medkit fa-4x mb-2"></i>
+                            <h5>Healthcare</h5>
+                            <label for="q10" class="h5 question-text">Should the federal government provide health care
+                                and/or insurance to every citizen?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q19"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b19" class="thumbs-btn border-0 rounded" data-id="9"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no"id ="q20"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b20" class="thumbs-btn border-0 rounded" data-id="9"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -299,16 +313,19 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q11" class="h5 question-text">Do you agree with President Trump on withdrawing
-                                from the Paris climate agreement?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-medkit fa-4x mb-2"></i>
+                            <h5>Healthcare</h5>
+                            <label for="q11" class="h5 question-text">Should the federal government amend the
+                                Affordable Care Act/Obamacare by eliminating the 'essential health benefits' insurance
+                                plans must cover?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q11"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b21" class="thumbs-btn border-0 rounded" data-id="10"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q22"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b22" class="thumbs-btn border-0 rounded" data-id="10"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -321,16 +338,18 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q12" class="h5 question-text">Should the federal government do more to combat
-                                climate change by providing subsidies for renewable energy?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-medkit fa-4x mb-2"></i>
+                            <h5>Healthcare</h5>
+                            <label for="q12" class="h5 question-text">Should the federal government continue to fund
+                                Planned Parenthood?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q23"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b23" class="thumbs-btn border-0 rounded" data-id="11"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no"id ="q24"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b24" class="thumbs-btn border-0 rounded" data-id="11"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -343,16 +362,18 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q13" class="h5 question-text">Should the federal government do more to combat
-                                climate change by taxing carbon emissions?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-fist-raised fa-4x mb-2"></i>
+                            <h5>Social Issues</h5>
+                            <label for="q13" class="h5 question-text">Should the federal government provide more
+                                funding to states to fight opioid addiction?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q25"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b25" class="thumbs-btn border-0 rounded" data-id="12"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q26"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b26" class="thumbs-btn border-0 rounded" data-id="12"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -365,17 +386,18 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q14" class="h5 question-text">Should the federal government ban abortion after
-                                20 weeks gestation, with exceptions for cases of rape/incest and health
-                                complications?</label>
-                            <div class="row justify-content-center" >
+                            <i class="fa fa-fist-raised fa-4x mb-2"></i>
+                            <h5>Social Issues</h5>
+                            <label for="q14" class="h5 question-text">Should the U.S. build a physical wall between
+                                Mexico and the U.S.?</label>
+                            <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q27"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b27" class="thumbs-btn border-0 rounded" data-id="13"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q28"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b28" class="thumbs-btn border-0 rounded" data-id="13"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -388,262 +410,24 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q15" class="h5 question-text">Should the federal government provide health care
-                                and/or insurance to every citizen?</label>
-                            <div class="row justify-content-center" >
-                                <div class="col">
-                                    <button value="yes" id ="q29"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no" id ="q30"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUESTION 16 -->
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q16" class="h5 question-text">Should the federal government amend the Affordable
-                                Care Act/Obamacare by eliminating the 'essential health benefits' insurance plans must
-                                cover?</label>
-                            <div class="row justify-content-center" >
-                                <div class="col">
-                                    <button value="yes" id ="q31"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no" id ="q32"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUESTION 17 -->
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q17" class="h5 question-text">Should the federal government continue to fund
-                                Planned Parenthood?</label>
-                            <div class="row justify-content-center" >
-                                <div class="col">
-                                    <button value="yes" id ="q33"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no" id ="q34"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUESTION 18 -->
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q18" class="h5 question-text">Would you vote in favor of impeaching President
-                                Donald Trump based on what is known to date?</label>
-                            <div class="row justify-content-center">
-                                <div class="col">
-                                    <button value="yes" id ="q35"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no" id ="q36"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUESTION 19 -->
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q19" class="h5 question-text">Should the federal government provide more funding
-                                to states to fight opioid addiction?</label>
-                            <div class="row justify-content-center" >
-                                <div class="col">
-                                    <button value="yes" id ="q37"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no" id ="q38"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUESTION 20 -->
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q20" class="h5 question-text">Should the U.S. build a physical wall between
-                                Mexico and the U.S.?</label>
-                            <div class="row justify-content-center" >
-                                <div class="col">
-                                    <button value="yes" id ="q39"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no" id ="q40"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUESTION 21 -->
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q21" class="h5 question-text">Should Congress create a path to citizenship for
+                            <i class="fa fa-fist-raised fa-4x mb-2"></i>
+                            <h5>Social Issues</h5>
+                            <label for="q15" class="h5 question-text">Should Congress create a path to citizenship for
                                 illegal/undocumented immigrants brought to the U.S. as children?</label>
-                            <div class="row justify-content-center" >
-                                <div class="col">
-                                    <button value="yes" id ="q41"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no" id ="q42"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUESTION 22 -->
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q22" class="h5 question-text">Do you generally support higher tariffs on imports
-                                from countries such as China, where we have a large trade deficit?</label>
-                            <div class="row justify-content-center" >
-                                <div class="col">
-                                    <button value="yes" id ="q43"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no" id ="q44"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- QUESTION 23 -->
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x" ></i>
-                            <h5> Topic </h5>
-                            <label for="q23" class="h5 question-text">Should the federal government do more to combat
-                                climate change by providing subsidies for energy efficiency?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q45"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes" id="b29" class="thumbs-btn border-0 rounded" data-id="14"><i
+                                            class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q46"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b30" class="thumbs-btn border-0 rounded" data-id="14"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- QUESTION 24 -->
-            <!-- <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q24" class="h5 question-text">Should the federal government amend the Affordable Care Act/'Obamacare' by eliminating the 'essential health benefits' insurance plans must cover?</label>
-                            <div class="row justify-content-center" id ="q24">
-                                <div class="col">
-                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- QUESTION 25 -->
-            <!-- <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q25" class="h5 question-text">Should the federal government amend the Affordable Care Act/Obamacare by giving states a fixed block grant for Medicaid?</label>
-                            <div class="row justify-content-center" id ="q25">
-                                <div class="col">
-                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- QUESTION 26 -->
-            <!-- <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x"></i>
-                            <h5> Topic </h5>
-                            <label for="q26" class="h5 question-text">Should the federal government ban abortion after 20 weeks gestation, with exceptions for cases of rape/incest and health complications</label>
-                            <div class="row justify-content-center" id ="q">
-                                <div class="col">
-                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
             <!-- SUBMIT BUTTON -->
             <div class="row justify-content-center">
@@ -677,14 +461,13 @@
                                     <div class="card-body">
                                         <div>
                                             <!-- Display Candidate Image -->
-                                            <img src="../assets/images/placeholder-image.png" id="candidateImg"
-                                                class="match-photo img-fluid rounded-circle" alt="Image Place Holder" />
+                                            <img src="../assets/images/placeholder-image.png" id="candidateImg" class="match-photo img-fluid rounded-circle"
+                                                alt="Image Place Holder" />
                                             <!-- Display Candidate Name -->
                                             <h5 id="candidateName" class="match-name card-title mt-3">Match
                                                 Name</h5>
                                             <!-- Display Match Percentage to Candidate -->
-                                            <h6 id="matchPercent" class="match-percentage card-subtitle mt-3">100%
-                                                Match</h6>
+                                            <h6 id="matchPercent" class="match-percentage card-subtitle mt-3"></h6>
                                         </div>
                                     </div>
                                 </a>
@@ -719,8 +502,8 @@
                         <div class="modal-footer">
                             <!-- See All Candidates w/ Tooltip -->
                             <!-- Redirect to All Candidate HTML -->
-                            <button type="button" class="btn btn-secondary" data-toggle="tooltip"
-                                data-placement="bottom" title="See List of All Candidates">
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+                                title="See List of All Candidates">
                                 View All Candidates
                             </button>
                             <!-- Save Results w/ Tooltip -->
@@ -747,8 +530,7 @@
                     <a href="#" class="footer-links">About Us</a>
                 </div>
                 <div class="col">
-                    <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i
-                            class="fab fa-github fa-lg"></i></a>
+                    <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i class="fab fa-github fa-lg"></i></a>
                 </div>
                 <div class="col">
                     <a href="#" class="footer-links">Contact</a>
@@ -764,9 +546,12 @@
     </footer>
 
     <!-- Per bootstrap: jQuery, Popper, Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!-- Chosen Stylesheet-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
@@ -776,307 +561,76 @@
 
 <script type="text/javascript">
 
-var UserPosition=[];
-var CBpositions = ["yes","no","yes","no","no","yes","yes","no","other","no","no","yes","yes","no","yes","no","yes","other","yes","no","yes","no","yes"]
-var PBpositions =["yes","no answer","yes","no","no answer","yes","yes","no","other","no answer","no","yes","other","no","no","no","yes","other","yes","no","yes","no","yes"]
-var CBcount;
-var PBcount;
-var total= 
+    var userAnswers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    var cbPositions = ["yes", "yes", "no", "yes", "yes", "no", "no", "yes", "no", "yes", "no", "yes", "yes", "no", "yes"];
+    var pbPositions = ["yes", "yes", "no", "yes", "yes", "no", "no", "yes", "no", "no", "no", "yes", "yes", "no", "yes"];
+    var cbCount = 0;
+    var pbCount = 0;
+    var userTotal = 0;
+    var userMatch;
+
+    $(".thumbs-btn").on("click", function () {
+        var index = $(this).data("id");
+
+        if (!userAnswers[index]) {
+            userTotal++;
+        }
+
+        userAnswers[index] = $(this).val();
+        console.log(userAnswers);
+        console.log("User total questions answered: " + userTotal);
+
+    });
+
+    $(".submit-quiz-btn").on("click", function (event) {
+        event.preventDefault();
+
+        for (var i = 0; i < userAnswers.length; i++) {
+            if (userAnswers[i]) {
+                if (userAnswers[i] === cbPositions[i]) {
+                    cbCount++;
+                    console.log("CBooker count is: " + cbCount);
+                }
+                if (userAnswers[i] === pbPositions[i]) {
+                    pbCount++;
+                    console.log("PButtigieg count is: " + pbCount);
+                }
+            }
+        }
+
+        var mPercent;
+
+        if (cbCount > pbCount) {
+            userMatch = "Corey Booker";
+            console.log("User match is: " + userMatch);
+            $("#candidateName").text(userMatch);
+
+            mPercent = Math.round(((cbCount / userTotal) * 100));
+            $("#matchPercent").text(mPercent + "%");
+            console.log("Match percentage= " + mPercent);
+
+        } else if (cbCount === pbCount) {
+            userMatch = "Pete Buttigieg and Corey Booker";
+            console.log("User match is: " + userMatch);
+            $("#candidateName").text(userMatch);
+
+            mPercent = Math.round(((cbCount / userTotal) * 100));
+            $("#matchPercent").text(mPercent + "%");
+            console.log("Match percentage= " + mPercent);
+
+        } else {
+            userMatch = "Pete Buttigieg";
+            console.log("User match is: " + userMatch);
+            $("#candidateName").text(userMatch);
+
+            mPercent = Math.round(((pbCount / userTotal) * 100));
+            $("#matchPercent").text(mPercent + "%");
+            console.log("Match percentage= " + mPercent);
+        }
+
+    });
 
 
-
-
-
-      $("#q1").on("click", function (event) {
-        event.preventDefault();
-         var q1 = $("#q1").val();       
-         UserPosition.push(q1);
-       });
-
-       $("#q2").on("click", function (event) {
-        event.preventDefault();
-         var q2 = $("#q2").val();
-         UserPosition.push(q2);
-       });
-
-       $("#q3").on("click", function (event) {
-        event.preventDefault();
-         var q3 = $("#q3").val();       
-         UserPosition.push(q3);
-       });
-
-       $("#q4").on("click", function (event) {
-        event.preventDefault();
-         var q4 = $("#q4").val();
-         UserPosition.push(q4);
-       });
-
-       $("#q5").on("click", function (event) {
-        event.preventDefault();
-         var q5 = $("#q5").val();       
-         UserPosition.push(q5);
-       });
-
-       $("#q6").on("click", function (event) {
-        event.preventDefault();
-         var q6 = $("#q6").val();
-         UserPosition.push(q6);
-       });
-
-       $("#q7").on("click", function (event) {
-        event.preventDefault();
-         var q7 = $("#q7").val();       
-         UserPosition.push(q7);
-       });
-
-       $("#q8").on("click", function (event) {
-        event.preventDefault();
-         var q8 = $("#q8").val();
-         UserPosition.push(q8);
-       });
-
-       $("#q9").on("click", function (event) {
-        event.preventDefault();
-         var q9 = $("#q9").val();       
-         UserPosition.push(q9);
-       });
-
-       $("#q10").on("click", function (event) {
-        event.preventDefault();
-         var q10 = $("#q10").val();
-         UserPosition.push(q10);
-       });
-       $("#q11").on("click", function (event) {
-        event.preventDefault();
-         var q11 = $("#q11").val();       
-         UserPosition.push(q11);
-       });
-
-       $("#q12").on("click", function (event) {
-        event.preventDefault();
-         var q12 = $("#q12").val();
-         UserPosition.push(q12);
-       });
-       $("#q13").on("click", function (event) {
-        event.preventDefault();
-         var q13 = $("#q13").val();       
-         UserPosition.push(q13);
-       });
-
-       $("#q14").on("click", function (event) {
-        event.preventDefault();
-         var q14 = $("#q14").val();
-         UserPosition.push(q14);
-       });
-       $("#q15").on("click", function (event) {
-        event.preventDefault();
-         var q15 = $("#q15").val();       
-         UserPosition.push(q15);
-       });
-
-       $("#q16").on("click", function (event) {
-        event.preventDefault();
-         var q16 = $("#q16").val();
-         UserPosition.push(q16);
-       });
-       $("#q17").on("click", function (event) {
-        event.preventDefault();
-         var q17 = $("#q17").val();       
-         UserPosition.push(q17);
-       });
-
-       $("#q18").on("click", function (event) {
-        event.preventDefault();
-         var q18 = $("#q18").val();
-         UserPosition.push(q18);
-       });
-       $("#q19").on("click", function (event) {
-        event.preventDefault();
-         var q19 = $("#q19").val();       
-         UserPosition.push(q19);
-       });
-
-       $("#q20").on("click", function (event) {
-        event.preventDefault();
-         var q20 = $("#q20").val();
-         UserPosition.push(q20);
-       });
-       $("#q21").on("click", function (event) {
-        event.preventDefault();
-         var q21 = $("#q21").val();       
-         UserPosition.push(q21);
-       });
-
-       $("#q22").on("click", function (event) {
-        event.preventDefault();
-         var q22 = $("#q22").val();
-         UserPosition.push(q22);
-       });
-       $("#q23").on("click", function (event) {
-        event.preventDefault();
-         var q23 = $("#q23").val();       
-         UserPosition.push(q23);
-       });
-
-       $("#q24").on("click", function (event) {
-        event.preventDefault();
-         var q24 = $("#q24").val();
-         UserPosition.push(q24);
-       });
-       $("#q25").on("click", function (event) {
-        event.preventDefault();
-         var q25 = $("#q25").val();       
-         UserPosition.push(q25);
-       });
-
-       $("#q26").on("click", function (event) {
-        event.preventDefault();
-         var q26 = $("#q26").val();
-         UserPosition.push(q26);
-       });
-       $("#q27").on("click", function (event) {
-        event.preventDefault();
-         var q27 = $("#q27").val();       
-         UserPosition.push(q27);
-       });
-
-       $("#q28").on("click", function (event) {
-        event.preventDefault();
-         var q28 = $("#q28").val();
-         UserPosition.push(q28);
-       });
-       $("#q29").on("click", function (event) {
-        event.preventDefault();
-         var q29 = $("#q29").val();       
-         UserPosition.push(q29);
-       });
-
-       $("#q30").on("click", function (event) {
-        event.preventDefault();
-         var q30 = $("#q30").val();
-         UserPosition.push(q30);
-       });
-       $("#q31").on("click", function (event) {
-        event.preventDefault();
-         var q31 = $("#q31").val();       
-         UserPosition.push(q31);
-       });
-
-       $("#q32").on("click", function (event) {
-        event.preventDefault();
-         var q32 = $("#q32").val();
-         UserPosition.push(q32);
-       });
-       $("#q33").on("click", function (event) {
-        event.preventDefault();
-         var q33 = $("#q33").val();       
-         UserPosition.push(q33);
-       });
-
-       $("#q34").on("click", function (event) {
-        event.preventDefault();
-         var q34 = $("#q34").val();
-         UserPosition.push(q34);
-       });
-       $("#q35").on("click", function (event) {
-        event.preventDefault();
-         var q35 = $("#q35").val();       
-         UserPosition.push(q35);
-       });
-
-       $("#q36").on("click", function (event) {
-        event.preventDefault();
-         var q36 = $("#q36").val();
-         UserPosition.push(q36);
-       });
-       $("#q37").on("click", function (event) {
-        event.preventDefault();
-         var q37 = $("#q37").val();       
-         UserPosition.push(q37);
-       });
-
-       $("#q38").on("click", function (event) {
-        event.preventDefault();
-         var q38 = $("#q38").val();
-         UserPosition.push(q38);
-       });
-       $("#q39").on("click", function (event) {
-        event.preventDefault();
-         var q39 = $("#q39").val();       
-         UserPosition.push(q39);
-       });
-
-       $("#q40").on("click", function (event) {
-        event.preventDefault();
-         var q40 = $("#q40").val();
-         UserPosition.push(q40);
-       });
-       $("#q41").on("click", function (event) {
-        event.preventDefault();
-         var q41 = $("#q41").val();       
-         UserPosition.push(q41);
-       });
-
-       $("#q42").on("click", function (event) {
-        event.preventDefault();
-         var q42 = $("#q42").val();
-         UserPosition.push(q42);
-       });
-       $("#q43").on("click", function (event) {
-        event.preventDefault();
-         var q43 = $("#q43").val();       
-         UserPosition.push(q43);
-       });
-
-       $("#q44").on("click", function (event) {
-        event.preventDefault();
-         var q44 = $("#q44").val();
-         UserPosition.push(q44);
-       });
-       $("#q45").on("click", function (event) {
-        event.preventDefault();
-         var q45 = $("#q45").val();       
-         UserPosition.push(q45);
-       });
-
-       $("#q46").on("click", function (event) {
-        event.preventDefault();
-         var q46 = $("#q46").val();
-         UserPosition.push(q46);
-       });
-//this is the issue*****************
-$("#Submit").on("click", function (event) {
-    event.preventDefault();
-
- for(var i= 0; i<UserPosition.length; i++){
-     if (UserPosition[i]=== CBpositions[i]){
-         CBcount++;
-     } 
-     
-if (UserPosition[i]=== PBpositions[i]){
-    PBcount ++;
-     } 
- }
-    
-});      
-//************************************
-if( CBcount>PBcount){
-    total = "Corey Booker";
-}
-
-else if(CBcount>PBcount){
-    total = "Pete Buttigieg and Corey Booker";
-}
-else{
-    total = "Pete Buttigieg";
-}
-console.log(UserPosition)
-console.log(CBcount)
-console.log(PBcount)
-console.log(total)
-$("#candidateName").text(total);
-
-           
 </script>
 
 
