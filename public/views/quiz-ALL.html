@@ -498,7 +498,7 @@
                                     </div>
                                     <!-- Link to Individual Candidate Profile -->
                                     <!-- This is where user can see more information on each candidate -->
-                                    <div class="col match-links match-ellipsis">
+                                    <div class="col match-links match-ellipsis" id="indCanProfile">
                                         <a href="#" id="indCanProfile"><i class="fas fa-ellipsis-h"></i></a>
                                     </div>
                                 </div>
@@ -614,7 +614,7 @@
             console.log("User match is: " + userMatch);
             $("#candidateName").text(userMatch);
             $("#candidateImage").prepend("<img id='candidateImg' class= match-photo img-fluid rounded-circle src='../assets/images/coreyBooker.jpg' alt='Stock photo of Corey Booker' />");
-            
+            $("#indCanProfile").prepend("src='/public/views/coreyBooker.html'")
 
             mPercent = Math.round(((cbCount / userTotal) * 100));
             $("#matchPercent").text(mPercent + "%");
@@ -639,7 +639,6 @@
             $("#matchPercent").text(mPercent + "%");
             console.log("Match percentage= " + mPercent);
         }
-
     });
 
 
