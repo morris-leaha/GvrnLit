@@ -1,4 +1,5 @@
 USE 2020_electionsDB;
+
 CREATE TABLE quiz(
   id INT NOT NULL AUTO_INCREMENT,
   Issue VARCHAR(50) NULL,
