@@ -99,36 +99,33 @@ h3, h4, h5 {
     text-decoration: none;
 }
 
-.take-quiz-btn {
+/* QUIZ.HTML */
+
+.submit-quiz-btn {
     background-color: rgba(183, 62, 62, 1);
     border-color: rgba(0, 0, 0, 0.72);
 }
 
-.take-quiz-btn:hover {
-    background-color: rgb(130, 48, 48);
-    border-color: rgba(0, 0, 0, 0.72);
-}
-
-.take-quiz-btn:active {
+.submit-quiz-btn:hover {
     background-color: rgb(130, 48, 48);
     border-color: rgba(0, 0, 0, 0.72);
     transform: translateY(1px);
 }
 
-/* QUIZ.HTML */
+.submit-quiz-btn:active {
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(0, 0, 0, 0.72);
+    transform: translateY(2px);
+}
 
-.quiz-btn:hover {
+.thumbs-btn:hover {
     transform: translateY(1px);
+    background: rgba(220, 220, 220, 0.55);
 }
 
-.quiz-btn:active {
-    transform: translateY(3px);
+.thumbs-btn:active {
+    transform: translateY(4px);
 }
-
-/* want to possibly highlight link text in green for matching results or just keep green % */
-/* a {
-   color: #59b300;
-} */
 
 .fa-thumbs-up {
     color: #78a749;
@@ -136,16 +133,6 @@ h3, h4, h5 {
 
 .fa-thumbs-down {
     color: rgba(183, 62, 62, 1);
-}
-
-.submit-quiz-btn {
-    background-color: rgb(200, 47, 56);
-    border-color: rgba(0, 0, 0, 0.72);
-}
-
-.submit-quiz-btn:hover {
-    background-color: rgb(158, 27, 39);
-    border-color: rgba(0, 0, 0, 0.72);
 }
 
 /* IND CANDIDATE HTML */
