@@ -211,19 +211,6 @@ VALUES ("SOCIAL ISSUES",
 -- "Booker",
 -- "Cory Booker");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 INSERT INTO candidate_position (issue, question, position, first_name, last_name, candidate)	
 VALUES ("CRIME AND PUBLIC SAFETY", 
 "Should the U.S. impose additional sanctions on Russia in retaliation for its aggressive action in Syria and the Ukraine?",
