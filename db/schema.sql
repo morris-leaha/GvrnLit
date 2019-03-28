@@ -23,7 +23,7 @@ INSERT INTO candidates (first_name, last_name, current_position, state_name, cur
 VALUES ("Pete", "Buttigieg", "Major", "Indiana", "Declared", "@PeteButtigieg", "P00009092");
 
 INSERT INTO candidates (first_name, last_name, current_position, state_name, curr_status, twitter_acct, fec_id)	
-VALUES ("Julian", "Castro", "FORMER HOUSING AND URBAN DEVELOPMENT SECRETARY","","Declared","@JulianCastro","P00006213");
+VALUES ("Julian", "Castro", "FORMER HOUSING AND URBAN DEVELOPMENT SECRETARY", "", "Declared", "@JulianCastro", "P00006213");
 
 INSERT INTO candidates (first_name, last_name, current_position, state_name, curr_status, twitter_acct, fec_id)	
 VALUES ("John", "Delaney", "Rep", "Meryland", "Declared", "", "P0");

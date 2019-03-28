@@ -288,13 +288,13 @@ VALUES ("ECONOMY, BUDGET AND TAXES",
 "Buttigieg",
 "Pete Buttigieg");
 
-INSERT INTO candidate_position (issue, question, position, first_name, last_name, candidate)	
-VALUES ("ECONOMY, BUDGET AND TAXES", 
-"Do you generally support higher tariffs on imports from countries such as China, where we have a large trade deficit?",
-"no",
-"Pete",
-"Buttigieg",
-"Pete Buttigieg");
+-- INSERT INTO candidate_position (issue, question, position, first_name, last_name, candidate)	
+-- VALUES ("ECONOMY, BUDGET AND TAXES", 
+-- "Do you generally support higher tariffs on imports from countries such as China, where we have a large trade deficit?",
+-- "no",
+-- "Pete",
+-- "Buttigieg",
+-- "Pete Buttigieg");
 
 INSERT INTO candidate_position (issue, question, position, first_name, last_name, candidate)	
 VALUES ("EDUCATION", 
@@ -336,13 +336,13 @@ VALUES ("ENERGY AND ENVIRONMENT",
 "Buttigieg",
 "Pete Buttigieg");
 
-INSERT INTO candidate_position (issue, question, position, first_name, last_name, candidate)	
-VALUES ("ENERGY AND ENVIRONMENT", 
-"Should the federal government do more to combat climate change by providing subsidies for energy efficiency?",
-"yes",
-"Pete",
-"Buttigieg",
-"Pete Buttigieg");
+-- INSERT INTO candidate_position (issue, question, position, first_name, last_name, candidate)	
+-- VALUES ("ENERGY AND ENVIRONMENT", 
+-- "Should the federal government do more to combat climate change by providing subsidies for energy efficiency?",
+-- "yes",
+-- "Pete",
+-- "Buttigieg",
+-- "Pete Buttigieg");
 
 INSERT INTO candidate_position (issue, question, position, first_name, last_name, candidate)	
 VALUES ("HEALTH CARE", 
@@ -416,13 +416,13 @@ VALUES ("SOCIAL ISSUES",
 "Buttigieg",
 "Pete Buttigieg");
 
-INSERT INTO candidate_position (issue, question, position, first_name, last_name, candidate)	
-VALUES ("SOCIAL ISSUES", 
-"Should the government enforce federal marijuana laws in states that have legalized marijuana?",
-"no",
-"Pete",
-"Buttigieg",
-"Pete Buttigieg");
+-- INSERT INTO candidate_position (issue, question, position, first_name, last_name, candidate)	
+-- VALUES ("SOCIAL ISSUES", 
+-- "Should the government enforce federal marijuana laws in states that have legalized marijuana?",
+-- "no",
+-- "Pete",
+-- "Buttigieg",
+-- "Pete Buttigieg");
 
 INSERT INTO candidate_position (issue, question, position, first_name, last_name, candidate)	
 VALUES ("SOCIAL ISSUES", 
