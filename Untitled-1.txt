@@ -83,12 +83,12 @@
                             <h5> Topic </h5>
                             <label for="q1" class="h5 question-text">Should the U.S. impose additional sanctions on
                                 Russia in retaliation for its aggressive action in Syria and the Ukraine?</label>
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-center" id="q1">
                                 <div class="col">
-                                    <button value="yes" id="q1"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no"  id="q2"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -105,12 +105,12 @@
                             <h5> Topic </h5>
                             <label for="q2" class="h5 question-text">Do you support Pres. Trump's decision to withdraw
                                 from the 2015 Iran nuclear agreement?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q2">
                                 <div class="col">
-                                    <button value="yes" id ="q3"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q4"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -127,12 +127,12 @@
                             <h5> Topic </h5>
                             <label for="q3" class="h5 question-text">Should the federal government expand background
                                 checks for firearms sales?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q3">
                                 <div class="col">
-                                    <button value="yes"id ="q5"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q6"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -149,12 +149,12 @@
                             <h5> Topic </h5>
                             <label for="q4" class="h5 question-text">Should the government enforce federal marijuana
                                 laws in states that have legalized marijuana?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q4">
                                 <div class="col">
-                                    <button value="yes"id ="q7"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no"id ="q8"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -171,12 +171,12 @@
                             <h5> Topic </h5>
                             <label for="q5" class="h5 question-text">Should the federal government privatize some or all
                                 of Social Security?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q5">
                                 <div class="col">
-                                    <button value="yes"id ="q9"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no"id ="q10"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -193,12 +193,12 @@
                             <h5> Topic </h5>
                             <label for="q6" class="h5 question-text">Should the federal government raise the minimum
                                 wage?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q6">
                                 <div class="col">
-                                    <button value="yes"id ="q11"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q12"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -215,12 +215,12 @@
                             <h5> Topic </h5>
                             <label for="q7" class="h5 question-text">Should the federal government increase funding for
                                 transportation infrastructure, such as road repair and highway expansion?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q7">
                                 <div class="col">
-                                    <button value="yes" id ="q13"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q14"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -237,12 +237,12 @@
                             <h5> Topic </h5>
                             <label for="q8" class="h5 question-text">Do you believe the 'Trump tax plan' bill passed in
                                 December 2017 helps middle income citizens?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q8">
                                 <div class="col">
-                                    <button value="yes" id ="q15"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q16"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -259,12 +259,12 @@
                             <h5> Topic </h5>
                             <label for="q9" class="h5 question-text">Should the federal government allow student loan
                                 payments to be reduced based on income?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q9">
                                 <div class="col">
-                                    <button value="yes" id ="q17"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q18"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -281,12 +281,12 @@
                             <h5> Topic </h5>
                             <label for="q10" class="h5 question-text">Should the federal government continue to
                                 subsidize the domestic production of oil?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q10">
                                 <div class="col">
-                                    <button value="yes" id ="q19"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no"id ="q20"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -303,12 +303,12 @@
                             <h5> Topic </h5>
                             <label for="q11" class="h5 question-text">Do you agree with President Trump on withdrawing
                                 from the Paris climate agreement?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q11">
                                 <div class="col">
-                                    <button value="yes" id ="q11"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q22"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -325,12 +325,12 @@
                             <h5> Topic </h5>
                             <label for="q12" class="h5 question-text">Should the federal government do more to combat
                                 climate change by providing subsidies for renewable energy?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q12">
                                 <div class="col">
-                                    <button value="yes" id ="q23"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no"id ="q24"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -347,12 +347,12 @@
                             <h5> Topic </h5>
                             <label for="q13" class="h5 question-text">Should the federal government do more to combat
                                 climate change by taxing carbon emissions?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q13">
                                 <div class="col">
-                                    <button value="yes" id ="q25"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q26"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -370,12 +370,12 @@
                             <label for="q14" class="h5 question-text">Should the federal government ban abortion after
                                 20 weeks gestation, with exceptions for cases of rape/incest and health
                                 complications?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q14">
                                 <div class="col">
-                                    <button value="yes" id ="q27"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q28"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -392,12 +392,12 @@
                             <h5> Topic </h5>
                             <label for="q15" class="h5 question-text">Should the federal government provide health care
                                 and/or insurance to every citizen?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q15">
                                 <div class="col">
-                                    <button value="yes" id ="q29"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q30"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -415,12 +415,12 @@
                             <label for="q16" class="h5 question-text">Should the federal government amend the Affordable
                                 Care Act/Obamacare by eliminating the 'essential health benefits' insurance plans must
                                 cover?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q16">
                                 <div class="col">
-                                    <button value="yes" id ="q31"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q32"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -437,12 +437,12 @@
                             <h5> Topic </h5>
                             <label for="q17" class="h5 question-text">Should the federal government continue to fund
                                 Planned Parenthood?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q17">
                                 <div class="col">
-                                    <button value="yes" id ="q33"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q34"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -459,12 +459,12 @@
                             <h5> Topic </h5>
                             <label for="q18" class="h5 question-text">Would you vote in favor of impeaching President
                                 Donald Trump based on what is known to date?</label>
-                            <div class="row justify-content-center">
+                            <div class="row justify-content-center" id ="q18">
                                 <div class="col">
-                                    <button value="yes" id ="q35"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q36"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -481,12 +481,12 @@
                             <h5> Topic </h5>
                             <label for="q19" class="h5 question-text">Should the federal government provide more funding
                                 to states to fight opioid addiction?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q19">
                                 <div class="col">
-                                    <button value="yes" id ="q37"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q38"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -503,12 +503,12 @@
                             <h5> Topic </h5>
                             <label for="q20" class="h5 question-text">Should the U.S. build a physical wall between
                                 Mexico and the U.S.?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q20">
                                 <div class="col">
-                                    <button value="yes" id ="q39"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q40"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -525,12 +525,12 @@
                             <h5> Topic </h5>
                             <label for="q21" class="h5 question-text">Should Congress create a path to citizenship for
                                 illegal/undocumented immigrants brought to the U.S. as children?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q21">
                                 <div class="col">
-                                    <button value="yes" id ="q41"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q42"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -547,12 +547,12 @@
                             <h5> Topic </h5>
                             <label for="q22" class="h5 question-text">Do you generally support higher tariffs on imports
                                 from countries such as China, where we have a large trade deficit?</label>
-                            <div class="row justify-content-center" >
+                            <div class="row justify-content-center" id ="q22">
                                 <div class="col">
-                                    <button value="yes" id ="q43"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q44"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -565,16 +565,16 @@
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
-                            <i class="fa fa-credit-card fa-4x" ></i>
+                            <i class="fa fa-credit-card fa-4x" id ="q23"></i>
                             <h5> Topic </h5>
                             <label for="q23" class="h5 question-text">Should the federal government do more to combat
                                 climate change by providing subsidies for energy efficiency?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
-                                    <button value="yes" id ="q45"><i class="far fa-thumbs-up fa-2x"></i></button>
+                                    <button value="yes"><i class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id ="q46"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no"><i class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -775,308 +775,95 @@
 </body>
 
 <script type="text/javascript">
+    // Chosen CSS
+    // var config = {
+    //     ".chosen-select": {},
+    //     ".chosen-select-deselect": {
+    //         allow_single_deselect: true
+    //     },
+    //     ".chosen-select-no-single": {
+    //         disable_search_threshold: 10
+    //     },
+    //     ".chosen-select-no-results": {
+    //         no_results_text: "Oops, nothing found!"
+    //     },
+    //     ".chosen-select-width": {
+    //         width: "95%"
+    //     }
+    // };
 
-var UserPosition=[];
-var CBpositions = ["yes","no","yes","no","no","yes","yes","no","other","no","no","yes","yes","no","yes","no","yes","other","yes","no","yes","no","yes"]
-var PBpositions =["yes","no answer","yes","no","no answer","yes","yes","no","other","no answer","no","yes","other","no","no","no","yes","other","yes","no","yes","no","yes"]
-var CBcount;
-var PBcount;
-var total= 
+    // for (var selector in config) {
+    //     $(selector).chosen(config[selector]);
+    // }
 
+    // Capture the form inputs
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
 
+        // Form validation
+        // function validateForm() {
+        //     var isValid = true;
+        //     $(".form-control").each(function () {
+        //         if ($(this).val() === "") {
+        //             isValid = false;
+        //         }
+        //     });
 
+        //     $(".chosen-select").each(function () {
+        //         if ($(this).val() === "") {
+        //             isValid = false;
+        //         }
+        //     });
+        //     return isValid;
+        // }
 
+        // // If all required fields are filled
+        // if (validateForm()) {
+            // Create an object for the user's data
+            var userData = {
+                positions: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                    $("#q11").val(),
+                    $("#q12").val(),
+                    $("#q13").val(),
+                    $("#q14").val(),
+                    $("#q15").val(),
+                    $("#q16").val(),
+                    $("#q17").val(),
+                    $("#q18").val(),
+                    $("#q19").val(),
+                    $("#q20").val(),
+                    $("#q21").val(),
+                    $("#q22").val(),
+                    $("#q23").val(),
+                ]
+            };
 
-      $("#q1").on("click", function (event) {
-        event.preventDefault();
-         var q1 = $("#q1").val();       
-         UserPosition.push(q1);
-       });
+            // AJAX post the data to the users API.
+            $.post("/api/users", userData, function (data) {
+                console.log(data);
 
-       $("#q2").on("click", function (event) {
-        event.preventDefault();
-         var q2 = $("#q2").val();
-         UserPosition.push(q2);
-       });
+                // // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                // $("#match-name").text(data.name);
+                // $("#match-img").attr("src", data.photo);
 
-       $("#q3").on("click", function (event) {
-        event.preventDefault();
-         var q3 = $("#q3").val();       
-         UserPosition.push(q3);
-       });
+                // // Show the modal with the best match
+                // $("#results-modal").modal("toggle");
 
-       $("#q4").on("click", function (event) {
-        event.preventDefault();
-         var q4 = $("#q4").val();
-         UserPosition.push(q4);
-       });
-
-       $("#q5").on("click", function (event) {
-        event.preventDefault();
-         var q5 = $("#q5").val();       
-         UserPosition.push(q5);
-       });
-
-       $("#q6").on("click", function (event) {
-        event.preventDefault();
-         var q6 = $("#q6").val();
-         UserPosition.push(q6);
-       });
-
-       $("#q7").on("click", function (event) {
-        event.preventDefault();
-         var q7 = $("#q7").val();       
-         UserPosition.push(q7);
-       });
-
-       $("#q8").on("click", function (event) {
-        event.preventDefault();
-         var q8 = $("#q8").val();
-         UserPosition.push(q8);
-       });
-
-       $("#q9").on("click", function (event) {
-        event.preventDefault();
-         var q9 = $("#q9").val();       
-         UserPosition.push(q9);
-       });
-
-       $("#q10").on("click", function (event) {
-        event.preventDefault();
-         var q10 = $("#q10").val();
-         UserPosition.push(q10);
-       });
-       $("#q11").on("click", function (event) {
-        event.preventDefault();
-         var q11 = $("#q11").val();       
-         UserPosition.push(q11);
-       });
-
-       $("#q12").on("click", function (event) {
-        event.preventDefault();
-         var q12 = $("#q12").val();
-         UserPosition.push(q12);
-       });
-       $("#q13").on("click", function (event) {
-        event.preventDefault();
-         var q13 = $("#q13").val();       
-         UserPosition.push(q13);
-       });
-
-       $("#q14").on("click", function (event) {
-        event.preventDefault();
-         var q14 = $("#q14").val();
-         UserPosition.push(q14);
-       });
-       $("#q15").on("click", function (event) {
-        event.preventDefault();
-         var q15 = $("#q15").val();       
-         UserPosition.push(q15);
-       });
-
-       $("#q16").on("click", function (event) {
-        event.preventDefault();
-         var q16 = $("#q16").val();
-         UserPosition.push(q16);
-       });
-       $("#q17").on("click", function (event) {
-        event.preventDefault();
-         var q17 = $("#q17").val();       
-         UserPosition.push(q17);
-       });
-
-       $("#q18").on("click", function (event) {
-        event.preventDefault();
-         var q18 = $("#q18").val();
-         UserPosition.push(q18);
-       });
-       $("#q19").on("click", function (event) {
-        event.preventDefault();
-         var q19 = $("#q19").val();       
-         UserPosition.push(q19);
-       });
-
-       $("#q20").on("click", function (event) {
-        event.preventDefault();
-         var q20 = $("#q20").val();
-         UserPosition.push(q20);
-       });
-       $("#q21").on("click", function (event) {
-        event.preventDefault();
-         var q21 = $("#q21").val();       
-         UserPosition.push(q21);
-       });
-
-       $("#q22").on("click", function (event) {
-        event.preventDefault();
-         var q22 = $("#q22").val();
-         UserPosition.push(q22);
-       });
-       $("#q23").on("click", function (event) {
-        event.preventDefault();
-         var q23 = $("#q23").val();       
-         UserPosition.push(q23);
-       });
-
-       $("#q24").on("click", function (event) {
-        event.preventDefault();
-         var q24 = $("#q24").val();
-         UserPosition.push(q24);
-       });
-       $("#q25").on("click", function (event) {
-        event.preventDefault();
-         var q25 = $("#q25").val();       
-         UserPosition.push(q25);
-       });
-
-       $("#q26").on("click", function (event) {
-        event.preventDefault();
-         var q26 = $("#q26").val();
-         UserPosition.push(q26);
-       });
-       $("#q27").on("click", function (event) {
-        event.preventDefault();
-         var q27 = $("#q27").val();       
-         UserPosition.push(q27);
-       });
-
-       $("#q28").on("click", function (event) {
-        event.preventDefault();
-         var q28 = $("#q28").val();
-         UserPosition.push(q28);
-       });
-       $("#q29").on("click", function (event) {
-        event.preventDefault();
-         var q29 = $("#q29").val();       
-         UserPosition.push(q29);
-       });
-
-       $("#q30").on("click", function (event) {
-        event.preventDefault();
-         var q30 = $("#q30").val();
-         UserPosition.push(q30);
-       });
-       $("#q31").on("click", function (event) {
-        event.preventDefault();
-         var q31 = $("#q31").val();       
-         UserPosition.push(q31);
-       });
-
-       $("#q32").on("click", function (event) {
-        event.preventDefault();
-         var q32 = $("#q32").val();
-         UserPosition.push(q32);
-       });
-       $("#q33").on("click", function (event) {
-        event.preventDefault();
-         var q33 = $("#q33").val();       
-         UserPosition.push(q33);
-       });
-
-       $("#q34").on("click", function (event) {
-        event.preventDefault();
-         var q34 = $("#q34").val();
-         UserPosition.push(q34);
-       });
-       $("#q35").on("click", function (event) {
-        event.preventDefault();
-         var q35 = $("#q35").val();       
-         UserPosition.push(q35);
-       });
-
-       $("#q36").on("click", function (event) {
-        event.preventDefault();
-         var q36 = $("#q36").val();
-         UserPosition.push(q36);
-       });
-       $("#q37").on("click", function (event) {
-        event.preventDefault();
-         var q37 = $("#q37").val();       
-         UserPosition.push(q37);
-       });
-
-       $("#q38").on("click", function (event) {
-        event.preventDefault();
-         var q38 = $("#q38").val();
-         UserPosition.push(q38);
-       });
-       $("#q39").on("click", function (event) {
-        event.preventDefault();
-         var q39 = $("#q39").val();       
-         UserPosition.push(q39);
-       });
-
-       $("#q40").on("click", function (event) {
-        event.preventDefault();
-         var q40 = $("#q40").val();
-         UserPosition.push(q40);
-       });
-       $("#q41").on("click", function (event) {
-        event.preventDefault();
-         var q41 = $("#q41").val();       
-         UserPosition.push(q41);
-       });
-
-       $("#q42").on("click", function (event) {
-        event.preventDefault();
-         var q42 = $("#q42").val();
-         UserPosition.push(q42);
-       });
-       $("#q43").on("click", function (event) {
-        event.preventDefault();
-         var q43 = $("#q43").val();       
-         UserPosition.push(q43);
-       });
-
-       $("#q44").on("click", function (event) {
-        event.preventDefault();
-         var q44 = $("#q44").val();
-         UserPosition.push(q44);
-       });
-       $("#q45").on("click", function (event) {
-        event.preventDefault();
-         var q45 = $("#q45").val();       
-         UserPosition.push(q45);
-       });
-
-       $("#q46").on("click", function (event) {
-        event.preventDefault();
-         var q46 = $("#q46").val();
-         UserPosition.push(q46);
-       });
-//this is the issue*****************
-$("#Submit").on("click", function (event) {
-    event.preventDefault();
-
- for(var i= 0; i<UserPosition.length; i++){
-     if (UserPosition[i]=== CBpositions[i]){
-         CBcount++;
-     } 
-     
-if (UserPosition[i]=== PBpositions[i]){
-    PBcount ++;
-     } 
- }
-    
-});      
-//************************************
-if( CBcount>PBcount){
-    total = "Corey Booker";
-}
-
-else if(CBcount>PBcount){
-    total = "Pete Buttigieg and Corey Booker";
-}
-else{
-    total = "Pete Buttigieg";
-}
-console.log(UserPosition)
-console.log(CBcount)
-console.log(PBcount)
-console.log(total)
-$("#candidateName").text(total);
-
-           
+            });
+        // } else {
+        //     alert("Please fill out all fields before clicking submit!");
+        // }
+    });
 </script>
 
 
