@@ -15,18 +15,16 @@ body {
     box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
 }
 
-.nav-link:link {
-    color: #efefef;
+.take-quizBTN:active {
+    transform: translateY(3px);
 }
 
-.nav-link:visited {
-    color: #efefef;
-    text-decoration: none;
+.signin-btn:active {
+    transform: translateY(3px);
 }
 
-.nav-link:hover {
-    color: #9a9b9e;
-    text-decoration: none;
+.signup-btn:active {
+    transform: translateY(3px);
 }
 
 .container {
@@ -43,6 +41,22 @@ h3, h4, h5 {
 
 .fa {
     color: #2d3d9e;
+}
+
+/* NAV-LINKS -- indComparison.html | indCandidate.html | allCandidates.html */
+
+.nav-link:link {
+    color: #efefef;
+}
+
+.nav-link:visited {
+    color: #efefef;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #9a9b9e;
+    text-decoration: none;
 }
 
 /* PROFILE.HTML */
