@@ -149,6 +149,31 @@ h3, h4, h5 {
     color: rgba(183, 62, 62, 1);
 }
 
+/* ABOUT US PAGE */
+
+#team {
+    font-size: 70px;
+    opacity: .55;
+}
+
+#about {
+    font-size: 25px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+#profile {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    opacity: .55;
+    font-size: 20px;
+}
+
 /* IND CANDIDATE HTML */
 
 .indCand-photo {
