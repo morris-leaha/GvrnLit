@@ -5,9 +5,9 @@ CREATE TABLE user_position (
   issue VARCHAR(50) NULL,
   question VARCHAR(300) NULL,
   position VARCHAR(100) NULL,
-  user_first_name VARCHAR(50) NULL,
-  user_last_name VARCHAR(50) NULL,
-  user VARCHAR (100) NULL,  
+  user_name VARCHAR(50) NULL,
+  user_email VARCHAR(50) NULL,
+  password VARCHAR (100) NULL,  
   PRIMARY KEY (id)
 );
 
