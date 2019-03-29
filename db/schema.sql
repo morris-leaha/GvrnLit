@@ -13,8 +13,11 @@ CREATE TABLE candidates (
   curr_status VARCHAR(100) NULL,
   twitter_acct VARCHAR(100) NULL,
   fec_id VARCHAR(100) NULL,
+  createdAt DATETIME,
+  updatedAt DATETIME,
   PRIMARY KEY (id)
 );
+
 
 INSERT INTO candidates (first_name, last_name, current_position, state_name, curr_status, twitter_acct, fec_id)	
 VALUES ("Cory", "Booker", "Senator", "New Jersey", "Declared", "@CoryBooker", "P00010298");
