@@ -1,6 +1,6 @@
-// var db = require("../models"); 
+var db = require("../models"); 
 var passport = require("passport");
-var candidatesArr = require("../app/data/candidates");
+// var candidatesArr = require("../app/data/candidates");
 var usersArr = require("../app/data/users");
 
 module.exports = function (app) {
