@@ -1,19 +1,19 @@
 {
     "development": {
       "username": "root",
-      "password": "PASSWORD",
+      "password": "4eKGzay9!",
       "database": "2020_electionsDB",
       "host": "localhost",
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
-      "password": "PASSWORD",
+      "password": "4eKGzay9!",
       "database": "testdb",
       "host": "localhost",
       "dialect": "mysql",
       "logging": false
-    },
+    }, 
     "production": {
       "use_env_variable": "JAWSDB_URL",
       "dialect": "mysql"

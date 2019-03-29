@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
         last_name: DataTypes.STRING,
         current_position: DataTypes.STRING,
         state_name: DataTypes.STRING,
-        current_status: DataTypes.STRING,
+        curr_status: DataTypes.STRING,
         twitter_acct: DataTypes.STRING,
         fec_id: DataTypes.STRING,
     });

@@ -32,8 +32,9 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Routes
-require("./routes/apiRoutes")(app);
+// require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+require("./routes/indCand-apiRoutes")(app);
 
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "public/views/index.html"));
