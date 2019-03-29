@@ -24,14 +24,6 @@ nav {
     flex: 1 0 auto;
 }
 
-.user-signup-title {
-    padding-bottom: 0;
-}
-
-.user-signup-div, .user-signin-div {
-    padding-top: 0;
-}
-
 .card {
     background: rgba(255, 255, 255, 0.8);
     color: #424242;
@@ -90,6 +82,23 @@ a.redirect {
 }
 
 .sign-up-btn:active {
+    transform: translateY(2px);
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+.sign-in-btn {
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+.sign-in-btn:hover {
+    transform: translateY(1px);
+    background-color:  rgb(130, 48, 48);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+
+.sign-in-btn:active {
     transform: translateY(2px);
     background-color: rgba(183, 62, 62, 1);
     border-color: rgba(0, 0, 0, 0.72);
