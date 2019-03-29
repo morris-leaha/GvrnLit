@@ -118,7 +118,8 @@
                     <div class="card mt-5 mb-3">
                         <h5 class="card-header mb-0">Recent News</h5>
                         <div class="card-body">
-                            <p>This is where recent news will go!</p>
+                            <div id="newsAPI">
+                            </div>
                         </div>
                     </div>
 
@@ -126,17 +127,16 @@
             </div>
 
             <!-- INDIVIDUAL CANDIDATE CAMPAIGN INFORMATION -->
-            <div class="row justify-content-center">
+            <!-- <div class="row justify-content-center">
                 <div class="col">
                     <div class="card mt-3 mb-3">
                         <h5 class="card-header mb-0">Campaign Information</h5>
                         <div class="card-body">
-                            <p>This is where campaign information will go!</p>
                         </div>
                     </div>
 
                 </div>
-            </div>
+            </div> -->
 
         </main>
 
@@ -183,19 +183,37 @@
 
 <script>
 
-    // var url = 'https://newsapi.org/v2/everything?' +
-    //     'q=corey+booker&' +
-    //     'from=2019-03-24&' +
-    //     'sortBy=recent&' +
-    //     'apiKey=400435e5285343fca12fc6110393eab5';
+var url = 'https://newsapi.org/v2/everything?' +
+    'q=booker&' +
+    'from=2019-03-24&' +
+    'sortBy=recent&' +
+    'apiKey=400435e5285343fca12fc6110393eab5';
 
-    // var req = new Request(url);
+  var req = new Request(url);
 
-    // fetch(req)
-    //     .then(function (response) {
-    //         // console.log(response.json());
-    //         console.log(response.json(Promise.articles));
-    //     });
+  fetch(req)
+    .then(function (response) {
+      return response.json();
+      // var articles = response.json();
+      // console.log(articles)
+    })
+    .then(function (myJson) {
+      // console.log(JSON.stringify(myJson.articles));
+      var { articles } = myJson
+      console.log('here are the articles: ', articles);
+      for (i = 0; i < articles.length; i++) {
+        var newsOutlet = (articles[i].source.name);
+        var title = (articles[i].title);
+        var articleUrl = (articles[i].url);
+
+        console.log("News Outlet: " + newsOutlet);
+        console.log("Title: " + title);
+        console.log("URL: " + articleUrl);
+
+        //updated HTML 
+        $("#newsAPI").prepend("News Outlet: " + newsOutlet + "<br>" + "Title: "+ title + "<br>" + "URL: " + articleUrl + "<br><br>");
+      };
+    });
 </script>
 
 
