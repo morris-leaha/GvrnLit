@@ -1,7 +1,7 @@
 # GvrnLit
 A mobile-friendly web application designed to eliminate bias and "match" voters to their perfect 2020 presidential candidate.
 
-We believe that everyone should exercise their constitutional right to vote, but we also understand that politics can be overwhelming.  With only roughly 60% of eligible voter turnout for the 2016 presidential election(insert citation here), GvrnLit hopes to encourage more individuals to vote and to vote with confidence!
+We believe that everyone should exercise their constitutional right to vote, but we also understand that politics can be overwhelming.  With only roughly 60% of eligible voter turnout for the 2016 presidential election<sup>1</sup>, GvrnLit hopes to encourage more individuals to vote and to vote with confidence!
 
 Our short quiz has been compiled into 8 categories: 
 
@@ -22,4 +22,7 @@ This app is deployed using Heroku.  Click <a href="https://gvrnlit.herokuapp.com
 <a href="http://www.passportjs.org/">Passport</a><br>
 <a href="https://www.npmjs.com/package/path">Path</a><br>
 <a href="http://docs.sequelizejs.com/">Sequelize</a><br>
+
+## Footnotes
+<sup>1</sup>[United States Elections Project](http://www.electproject.org/)
 
