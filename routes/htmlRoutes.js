@@ -25,8 +25,8 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/views/quiz-ALL.html"));
   });
 
-  app.get("/corey-booker", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/views/coreyBooker.html"));
+  app.get("/candidate", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/views/indCandidate.html"));
   });
 
   // If no matching route is found default to home
