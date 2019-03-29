@@ -1,12 +1,18 @@
 html, body {
     height: 100%;
-    background: url(../images/login-color.jpg) no-repeat center fixed;
-    background-size: cover;
+    /* background: url(../images/americanflag.jpg) no-repeat center fixed;
+    background-size: cover; */
 }
 
 body {
     display: flex;
     flex-direction: column;
+}
+
+.logo-col {
+    background: #244691;
+    box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
+
 }
 
 nav {
@@ -36,31 +42,50 @@ nav {
     margin-bottom: 0.5rem;
 }
 
+.input-field {
+    border: none;
+}
+
+.input-field:focus {
+    border: none;
+}
+
+.form-control:focus {
+    border-color: white;
+    box-shadow: none;
+}
+
+a.redirect {
+    font-size: 0.88rem;
+}
+
 .login-redirects a:link {
-    color: #424242;
+    color: black;
 }
 
 .login-redirects a:visited {
-    color: #424242;
+    color: black;
     text-decoration: none;
 }
 
 .login-redirects a:hover {
-    color: #929292;
+    color: #707070;
     text-decoration: none;
 }
 
 .login-redirects a:active {
-    color: #929292;
+    color: #353535;
     text-decoration: none;
 }
 
-.sign-up-btn, .sign-in-btn:hover {
+.sign-up-btn:hover {
     transform: translateY(1px);
+    background-color:  #707070;
+    border-color: #707070;
 }
 
-.sign-up-btn, .sign-in-btn:active {
-    transform: translateY(3px);
+.sign-up-btn:active {
+    transform: translateY(2px);
 }
 
 .sticky-footer {
