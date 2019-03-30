@@ -80,20 +80,21 @@
                         <a href="#" title="Click for results breakdown" class="candidate-card">
                             <div class="card-body">
                                 {{#each candidates}}
-                                <li>{{candidate.image}}</li>
-                                <li>{{candidate.name}}</li>
+                                {{!-- <li>{{candidate.image}}</li> --}}
+                                <li>{{candidates.first_name}}</li>
+                                <li>{{candidates.last_name}}</li>
                                 {{/each}}
                             </div>
                         </a>
                     </div>
                     <div class="card-footer">
                         {{#each candidates}}
-                        <li class="inline-block"><a href="{{candidate.twitter}}" id="indCanTwitter" title="Twitter"></a><i
+                        <li class="inline-block"><a href="{{candidates.twitter_acct}}" id="indCanTwitter" title="Twitter"></a><i
                                 class="fab fa-twitter"></i></a></li>
-                        <li class="inline-block"><a href="{{candidate.instagram}}" id="indCanInsta" title="Instagram"></a><i
+                        {{!-- <li class="inline-block"><a href="{{candidate.instagram}}" id="indCanInsta" title="Instagram"></a><i
                                 class="fab fa-instagram"></i></a></li>
                         <li class="inline-block"><a href="{{candidate.website}}" id="indCanWebsite" title="Personal Website"></a><i
-                                class="fas fa-globe"></i></a></li>
+                                class="fas fa-globe"></i></a></li> --}}
                         {{/each}}
                         <div class="col match-links match-ellipsis">
                             <a href="#" id="indCanProfile" title="Click for more detailed information"><i class="fas fa-ellipsis-h"></i></a>
