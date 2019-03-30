@@ -116,9 +116,6 @@ module.exports = function (app) {
   });
 };
 
-
-
-
   //======================================================
   //Get candidate info and answers - not using mysql
   //======================================================  
