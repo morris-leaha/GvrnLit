@@ -3,6 +3,7 @@
 // ===============================================================================
 var path = require("path");
 var db = require("../models");
+var authorizeUser = require("../config/authorizeUser");
 
 module.exports = function (app) {
 
@@ -26,7 +27,7 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/assets/html/quiz-ALL.html"));
   });
 
-  app.get("/candidate", function (req, res) {
+  app.get("/candidate", authorizeUser, function (req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/indCandidate.html"));
   });
 

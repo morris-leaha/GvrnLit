@@ -1,4 +1,4 @@
-function authorzieUser(req,res,next){
+function authorizeUser(req,res,next){
     if(req.isAuthenticated())
     {
         next()
@@ -9,4 +9,4 @@ function authorzieUser(req,res,next){
     }
 
 }
-module.exports = authorzieUser;
+module.exports = authorizeUser;
