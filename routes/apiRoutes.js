@@ -1,5 +1,6 @@
 var db = require("../models");
 var passport = require("passport");
+var Sequelize = require("sequelize");
 // // var candidatesArr = require("../app/data/candidates");
 // var usersArr = require("../app/data/users");
 
@@ -43,7 +44,7 @@ module.exports = function (app) {
   });
 
   //======================================================
-  // Individual Candidate Route(s) using mysql
+  // ALL Candidates Route using sequelize
   //====================================================== 
 
   app.get("/api/candidate", function (req, res) {
@@ -55,6 +56,15 @@ module.exports = function (app) {
     });
   });;
 
+  // app.post("/api/candidate", function (req, res) {
+  //   db.Candidate.create(req.body).then(function (dbCandidate) {
+  //     res.json(dbCandidate);
+  //   });
+  // });
+
+  //======================================================
+  // Individual Candidate Route  using sequelize
+  //====================================================== 
   app.get("/api/candidate/:id", function (req, res) {
     db.Candidate.findOne({
       where: {
@@ -66,38 +76,28 @@ module.exports = function (app) {
     });
   });
 
-  app.post("/api/candidate", function (req, res) {
-    db.Candidate.create(req.body).then(function (dbCandidate) {
-      res.json(dbCandidate);
-    });
-  });
-
-  app.delete("/api/candidate/:id", function (req, res) {
-    db.Candidate.destroy({
-      where: {
-        id: req.params.id
-      }
-    }).then(function (dbCandidate) {
-      res.json(dbCandidate);
-    });
-  });
+  // app.delete("/api/candidate/:id", function (req, res) {
+  //   db.Candidate.destroy({
+  //     where: {
+  //       id: req.params.id
+  //     }
+  //   }).then(function (dbCandidate) {
+  //     res.json(dbCandidate);
+  //   });
+  // });
 
   //======================================================
-  //All Candidates Handlebar File 
+  //Quiz Route(s) using sequelize 
   //======================================================  
-
-
-
-
-
-
-  //======================================================
-  //Quiz Route(s) using mysql
-  //======================================================  
+  
   // Get all examples
   app.get("/api/questions", function (req, res) {
-    db.Candidate_Position.findAll({}).then(function (dbQuiz) {
-      res.json(dbQuiz);
+    db.Candidate_Position.findAll({
+      attributes: [
+        [Sequelize.literal("DISTINCT `question`"), "candidate_position"]
+      ]
+    }).then(function (dbCandidate_Position) {
+      res.json(dbCandidate_Position);
     });
   });
 
@@ -114,8 +114,6 @@ module.exports = function (app) {
   //     res.json(dbQuiz);
   //   });
   // });
-
-
 
 };
 

@@ -1,12 +1,12 @@
-$(function() {
+// $(function() {
 
-    getCandidate();
+//     getCandidate();
 
-    function getCandidate() {
-        $.get("/api/candidate", function(data) {
-            console.log(data);
-        });
-    };
+//     function getCandidate() {
+//         $.get("/api/candidate", function(data) {
+//             console.log(data);
+//         });
+//     };
 
 
-});
+// });

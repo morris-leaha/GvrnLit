@@ -3,6 +3,8 @@
 // ===============================================================================
 var path = require("path");
 var db = require("../models");
+var axios = require("axios");
+var baseURL = "http://localhost:3000"
 
 module.exports = function(app) {
 
@@ -50,11 +52,14 @@ module.exports = function(app) {
   });
 
   app.get("/questions", function(req, res) {
-    db.Quiz.findAll({}).then(function(data) {
-      var hbsQuizObject = {
-        quiz: data
-      };
-      res.render("quiz-ALL", hbsQuizObject);
+    axios.get(baseURL + "/api/questions/").then(function(response) {
+      console.log(response.data);
+      var hbsObj2 = {
+        data: response.data
+      }
+      res.render("quiz-ALL", hbsObj2);
+    }).catch(function(error) {
+      console.log(error);
     });
   });
 
