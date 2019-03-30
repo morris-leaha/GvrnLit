@@ -96,24 +96,27 @@ module.exports = function (app) {
   //======================================================  
   // Get all examples
   app.get("/api/questions", function (req, res) {
-    db.Quiz.findAll({}).then(function (dbQuestions) {
-      res.json(dbQuestions);
+    db.Candidate_Position.findAll({}).then(function (dbQuiz) {
+      res.json(dbQuiz);
     });
   });
 
   // Create a new example
-  app.post("/api/questions", function (req, res) {
-    db.Quiz.create(req.body).then(function (dbQuestions) {
-      res.json(dbQuestions);
-    });
-  });
+  // app.post("/api/questions", function (req, res) {
+  //   db.Quiz.create(req.body).then(function (dbQuiz) {
+  //     res.json(dbQuiz);
+  //   });
+  // });
 
   // Delete an example by id
-  app.delete("/api/questions/:id", function (req, res) {
-    db.dbQuestions.destroy({ where: { id: req.params.id } }).then(function (dbQuestions) {
-      res.json(dbQuestions);
-    });
-  });
+  // app.delete("/api/questions/:id", function (req, res) {
+  //   db.Quiz.destroy({ where: { id: req.params.id } }).then(function (dbQuiz) {
+  //     res.json(dbQuiz);
+  //   });
+  // });
+
+
+
 };
 
   //======================================================

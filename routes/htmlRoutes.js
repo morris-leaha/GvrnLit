@@ -49,6 +49,15 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/questions", function(req, res) {
+    db.Quiz.findAll({}).then(function(data) {
+      var hbsQuizObject = {
+        quiz: data
+      };
+      res.render("quiz-ALL", hbsQuizObject);
+    });
+  });
+
   // If no matching route is found default to home
   app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/index.html"));

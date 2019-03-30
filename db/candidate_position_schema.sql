@@ -7,7 +7,9 @@ CREATE TABLE candidate_position (
   answer VARCHAR(100) NULL,
   first_name VARCHAR(50) NULL,
   last_name VARCHAR(50) NULL,
-  candidate VARCHAR (100) NULL,  
+  candidate VARCHAR (100) NULL,
+  createdAt DATETIME,
+  updatedAt DATETIME,  
   PRIMARY KEY (id)
 );
 
