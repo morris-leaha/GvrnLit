@@ -1,18 +1,17 @@
 module.exports = function(sequelize, DataTypes) {
-    var Candidate = sequelize.define("Candidate", {
+    var Candidate_Position = sequelize.define("Candidate_Position", {
+        issue: DataTypes.STRING,
+        question: DataTypes.TEXT,
+        answer: DataTypes.STRING,
         first_name: DataTypes.STRING,
         last_name: DataTypes.STRING,
-        current_position: DataTypes.STRING,
-        state_name: DataTypes.STRING,
-        curr_status: DataTypes.STRING,
-        twitter_acct: DataTypes.STRING,
-        fec_id: DataTypes.STRING,
+        candidate: DataTypes.STRING,
     },
     {
         // disable the modification of candidate; By default, sequelize will automatically
         // transform all passed model names (first parameter of define) into plural.
         // if you don't want that, set the following
-        tableName: "candidates"
+        tableName: "candidate_position"
       });
-    return Candidate;
+    return Candidate_Position;
 };

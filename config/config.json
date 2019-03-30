@@ -1,14 +1,14 @@
 {
     "development": {
       "username": "root",
-      "password": "4eKGzay9!",
+      "password": "Password123",
       "database": "2020_electionsDB",
       "host": "localhost",
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
-      "password": "4eKGzay9!",
+      "password": null,
       "database": "testdb",
       "host": "localhost",
       "dialect": "mysql",

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/assets/css/style.css" />
     <!-- LINK TO GOOGLE FONTS -->
     <!-- LINK TO FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
@@ -72,115 +72,38 @@
     <div class="container">
 
         <main>
+            {{#each data}}
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card text-justify mt-3 mb-3">
+                        <div class="card-body">
+                            <h6 class="question-text">{{this.candidate_position}}</h6>
+                            <div class="row text-center">
+                                <div class="col">
+                                    <button value="yes" data-id=""><i class="far fa-thumbs-up fa-2x"></i></button>
+                                </div>
+                                <div class="col">
+                                    <button value="no" data-id=""><i class="far fa-thumbs-down fa-2x"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+
             <!-- QUESTIONS -->
-            <div class="row justify-content-center">
+            {{!-- <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="card text-center mt-3 mb-3">
                         <div class="card-body">
                             <label for="q1" class="mx-auto"><i class="fa fa-credit-card fa-4x"></i></label>
                             <h3> Topic </h3>
-                            <h6 class="question-text">{{#each Questions}}{{/each}}</h6>
-                            <div class="row justify-content-center">
-                                <div class="col">
-                                    <button><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-{{!-- 
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <label for="q1" class="mx-auto"><i class="fa fa-credit-card fa-4x"></i></label>
-                            <h3> Topic </h3>
-                            <h6 class="question-text">Actual question will go here</h6>
-                            <div class="row justify-content-center">
-                                <div class="col">
-                                    <button><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <label for="q1" class="mx-auto"><i class="fa fa-credit-card fa-4x"></i></label>
-                            <h3> Topic </h3>
-                            <h6 class="question-text">Actual question will go here</h6>
-                            <div class="row justify-content-center">
-                                <div class="col">
-                                    <button><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <label for="q1" class="mx-auto"><i class="fa fa-credit-card fa-4x"></i></label>
-                            <h3> Topic </h3>
-                            <h6 class="question-text">Actual question will go here</h6>
-                            <div class="row justify-content-center">
-                                <div class="col">
-                                    <button><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <label for="q1" class="mx-auto"><i class="fa fa-credit-card fa-4x"></i></label>
-                            <h3> Topic </h3>
-                            <h6 class="question-text">Actual question will go here</h6>
-                            <div class="row justify-content-center">
-                                <div class="col">
-                                    <button><i class="far fa-thumbs-up fa-2x"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button><i class="far fa-thumbs-down fa-2x"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="card text-center mt-3 mb-3">
-                        <div class="card-body">
-                            <label for="q1" class="mx-auto"><i class="fa fa-credit-card fa-4x"></i></label>
-                            <h3> Topic </h3>
-                            <h6 class="question-text">Actual question will go here</h6>
+                            <h6 class="question-text">
+                                {{#each candidate_position}}
+                                {{candidate_position.question}}
+                                {{/each}}
+                            </h6>
                             <div class="row justify-content-center">
                                 <div class="col">
                                     <button><i class="far fa-thumbs-up fa-2x"></i></button>
@@ -319,7 +242,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <!-- Our JS File -->
-    <script src="main.js"></script>
+    {{!--
+    <script src="main.js"></script> --}}
 </body>
 
 </html>

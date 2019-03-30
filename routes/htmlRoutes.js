@@ -3,6 +3,8 @@
 // ===============================================================================
 var path = require("path");
 var db = require("../models");
+var axios = require("axios");
+var baseURL = "http://localhost:3000"
 var authorizeUser = require("../config/authorizeUser");
 
 module.exports = function (app) {
@@ -50,7 +52,18 @@ module.exports = function (app) {
     });
   });
 
-  // ===============================================================================
+  app.get("/questions", function(req, res) {
+    axios.get(baseURL + "/api/questions/").then(function(response) {
+      console.log(response.data);
+      var hbsObj2 = {
+        data: response.data
+      }
+      res.render("quiz-ALL", hbsObj2);
+    }).catch(function(error) {
+      console.log(error);
+    });
+  });
+
   // If no matching route is found default to home
   // ===============================================================================
   app.get("*", function (req, res) {
