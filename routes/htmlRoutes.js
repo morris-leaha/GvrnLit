@@ -5,45 +5,46 @@ var path = require("path");
 var db = require("../models");
 var axios = require("axios");
 var baseURL = "http://localhost:3000"
+var authorizeUser = require("../config/authorizeUser");
 
-module.exports = function(app) {
+module.exports = function (app) {
 
-// ===============================================================================
-// HTML GET Requests
-// ===============================================================================
+  // ===============================================================================
+  // HTML GET Requests
+  // ===============================================================================
 
-  app.get("/signin", function(req, res) {
+  app.get("/signin", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/signin.html"));
   });
 
-  app.get("/signup", function(req, res) {
+  app.get("/signup", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/signup.html"));
   });
 
-  app.get("/profile", function(req, res) {
+  app.get("/profile", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/profile.html"));
   });
 
-  app.get("/quiz-ALL", function(req, res) {
+  app.get("/quiz-ALL", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/quiz-ALL.html"));
   });
 
-  app.get("/candidate", function(req, res) {
+  app.get("/candidate", authorizeUser, function (req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/indCandidate.html"));
   });
 
-  app.get("/contact-us", function(req, res) {
+  app.get("/contact-us", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/contact.html"));
   });
 
-  app.get("/about-us", function(req, res) {
+  app.get("/about-us", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/aboutus.html"));
   });
-// ===============================================================================
-// Handlebars Requests
-// ===============================================================================
-  app.get("/allCandidates", function(req, res){
-    db.Candidate.findAll({}).then(function(data){
+  // ===============================================================================
+  // Handlebars Requests
+  // ===============================================================================
+  app.get("/allCandidates", function (req, res) {
+    db.Candidate.findAll({}).then(function (data) {
       var hbsObject = {
         candidates: data
       };
@@ -64,7 +65,8 @@ module.exports = function(app) {
   });
 
   // If no matching route is found default to home
-  app.get("*", function(req, res) {
+  // ===============================================================================
+  app.get("*", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/index.html"));
   });
 };
