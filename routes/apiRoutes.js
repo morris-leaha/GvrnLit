@@ -1,5 +1,6 @@
 var db = require("../models");
 var passport = require("passport");
+var bcrypt = require("bcrypt");
 // // var candidatesArr = require("../app/data/candidates");
 // var usersArr = require("../app/data/users");
 
@@ -7,25 +8,13 @@ module.exports = function (app) {
 
   //======================================================
   //Passport Route
-  //======================================================    
-  app.post("/api/login", passport.authenticate('local', {
-    successRedirect: "/home",
-    failureRedirect: "/login",
-  })
-  );
-
+  //======================================================   
   app.post("/api/register", function (req, res) {
+    console.log(req.body);
     var hashedPW = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10), null)
     db.User.findOne({
       where: {
-        [Op.or]: [
-          {
-            username: req.body.username
-          },
-          {
-            email: req.body.email
-          }
-        ]
+        email: req.body.email
       }
     }).then(function (user) {
       if (user) {
@@ -37,10 +26,16 @@ module.exports = function (app) {
           email: req.body.email,
           password: hashedPW
         })
-        res.redirect("/login")
+        res.redirect("/signin")
       }
     })
   });
+
+  app.post("/api/signin", passport.authenticate('local', {
+    successRedirect: "/index",
+    failureRedirect: "/signin",
+  })
+  );
 
   //======================================================
   // Individual Candidate Route(s) using mysql
@@ -85,10 +80,6 @@ module.exports = function (app) {
   //======================================================
   //All Candidates Handlebar File 
   //======================================================  
-
-
-
-
 
 
   //======================================================
