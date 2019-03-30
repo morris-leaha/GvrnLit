@@ -27,7 +27,15 @@ module.exports = function(app) {
   });
 
   app.get("/candidate", function(req, res) {
-    res.sendFile(path.join(__dirname, "../publi/assetsc/html/indCandidate.html"));
+    res.sendFile(path.join(__dirname, "../public/assets/html/indCandidate.html"));
+  });
+
+  app.get("/contact-us", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/assets/html/contact.html"));
+  });
+
+  app.get("/about-us", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/assets/html/aboutus.html"));
   });
 // ===============================================================================
 // Handlebars Requests
@@ -42,7 +50,7 @@ module.exports = function(app) {
   });
 
   // If no matching route is found default to home
-  // app.get("*", function(req, res) {
-  //   res.sendFile(path.join(__dirname, "../public/views/index.html"));
-  // });
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/assets/html/index.html"));
+  });
 };
