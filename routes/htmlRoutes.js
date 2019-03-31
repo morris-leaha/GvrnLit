@@ -4,6 +4,7 @@
 var path = require("path");
 var db = require("../models");
 var authorizeUser = require("../config/authorizeUser");
+var axios = require('axios');
 
 module.exports = function (app) {
 
@@ -49,6 +50,18 @@ module.exports = function (app) {
       res.render("all-candidates", hbsObject);
     });
   });
+
+
+// Test Route be careful
+app.get("/candidates/:id", function (req, res) {
+  //axios call to /api/candidates/:id
+  // axios.get("/api/candidates/:id"){
+
+  // }
+
+  //with the return res.render("candidate_profile.handlebars", response from axios)
+});
+
 
   // ===============================================================================
   // If no matching route is found default to home
