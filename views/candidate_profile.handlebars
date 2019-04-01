@@ -73,8 +73,6 @@
 
     <div class="container">
 
-        <div id="test"></div>
-
         <main>
             <!-- INDIVIDUAL CANDIDATE -->
             <div class="row justify-content-center">
@@ -123,9 +121,17 @@
                 <div class="col">
                     <div class="card mt-5 mb-4">
                         <h5 class="card-header mb-0">Recent News</h5>
-                        <div id="newsAPI" class="card-body" data-id={{data.last_name}}>
-                            <div id="newsArticle" class="inline-block"></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div id="newsAPI" class="col" data-id={{data.last_name}}>
+                                    <a id="articleLink" href="">
+                                        <div id="news-search"></div>
+                                        <div id="articles"></div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

@@ -37,19 +37,32 @@ $(function () {
                     var articleUrl = (articles[i].url);
                     var articleImage = (articles[i].urlToImage);
 
-                    console.log("News Outlet: " + newsOutlet);
-                    console.log("Title: " + title);
-                    console.log("URL: " + articleUrl);
-
                     // Populate Data in DOM 
-                    var articleLink = $("<a class='news-link'>").attr("href", articleUrl);
-                    var newsImg = $("<img class='img-fluid article-img mt-2 mb-5'>").attr("src", articleImage);
-                    var titleDiv = $("<div class='news-titleDiv'>").html("<p class='h5 mb-0'>" + title + "</p>");
-                    var newsSourceText = $("<small class='news-source text-muted'>").text("From: " + newsOutlet);
 
-                    var newsDisplayDiv = articleLink.append(titleDiv, newsSourceText, newsImg);
+                    var resultDiv = $("<div class='result'>");
+                    var imgDiv = $("<img class='img-fluid'>");
+                    imgDiv.attr("src", articleImage);
+                    resultDiv.append(imgDiv);
 
-                    $("#newsArticle").append(newsDisplayDiv);
+                    var resultTitleDiv = $("<div class='title'>");
+                    var resultSourceDiv = $("<div class='source'>");
+                    resultTitleDiv.html("<p class='h5'>" + title + "</p>");
+                    resultSourceDiv.html("<small class='text-muted'>" + newsOutlet + "</small>");
+
+                    $("#articleLink").attr("href", articleUrl);
+
+
+
+
+                    // var resultDiv = $("<div class='div-result'>");
+                    // var articleLink = $("<a class='news-link inline-flex'>").attr("href", articleUrl);
+                    // var newsImg = $("<img class='img-fluid article-img mt-2 mb-5'>").attr("src", articleImage);
+                    // var titleDiv = $("<div class='news-titleDiv'>").html("<p class='h5 mb-0'>" + title + "</p>");
+                    // var newsSourceText = $("<small class='news-source text-muted'>").text("From: " + newsOutlet);
+
+                    // var resultDiv = articleLink.append(titleDiv, newsSourceText, newsImg);
+
+                    $("#newsArticle").append(resultDiv);
                 };
             });
     }
