@@ -66,19 +66,6 @@ module.exports = function (app) {
     })
   });
 
-  //Quiz Page
-  // app.get("/questions", function (req, res) {
-  //   axios.get(baseURL + "/api/questions/").then(function (response) {
-  //     console.log(response.data);
-  //     var hbsObj2 = {
-  //       data: response.data
-  //     }
-  //     res.render("quiz-ALL", hbsObj2);
-  //   }).catch(function (error) {
-  //     console.log(error);
-  //   });
-  // });
-
   // If no matching route is found default to home
   // ===============================================================================
   app.get("*", function (req, res) {
