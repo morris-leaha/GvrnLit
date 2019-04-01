@@ -38,6 +38,11 @@ module.exports = function (app) {
   })
   );
 
+  app.get('/logout', function (req, res) {
+    req.logout();
+    res.redirect('/');
+  });
+
   //======================================================
   // ALL Candidates Route using sequelize
   //====================================================== 
@@ -74,7 +79,7 @@ module.exports = function (app) {
   //======================================================
   //Quiz Route(s) using sequelize 
   //======================================================  
-  
+
   // Get all questions
   app.get("/api/questions", function (req, res) {
     db.Candidate_Position.findAll({
