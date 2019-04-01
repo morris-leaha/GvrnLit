@@ -75,6 +75,10 @@ h3, h4, h5 {
     box-shadow: 0px 6px 14px 0px #0000002e;
 }
 
+.cand-card:hover {
+    transform: translateY(2px);
+}
+
 .candidate-card:link {
     color: #424242;
 }
@@ -84,13 +88,12 @@ h3, h4, h5 {
 }
 
 .candidate-card:hover {
-    background-color: rgba(183, 62, 62, 0.35);
+    background-color: rgba(183, 62, 62, 0.13);
     text-decoration: none;
 }
 
 .candidate-card:active {
-    background-color: rgba(208, 63, 63, 0.6);;
-    transform: translateY(1px);
+    background-color: rgba(208, 63, 63, 0.363);
     text-decoration: none;
 }
 
@@ -178,6 +181,21 @@ h3 {
 
 .indCand-photo {
     box-shadow: 0px 6px 14px 0px #0000002e;
+}
+
+.news-link:link {
+    color: #244691;
+}
+
+.news-link:visited {
+    color: #244691;
+    text-decoration: none;
+}
+
+.news-link:hover {
+    color: #6f94e8;
+    text-decoration: none;
+    opacity: 0.7;
 }
 
 /* COMPARISON HTML */
