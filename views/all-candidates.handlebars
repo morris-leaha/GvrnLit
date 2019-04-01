@@ -83,7 +83,7 @@
                         <a href="/candidate/{{this.id}}" title="Click for more information" class="candidate-card">
                             <div class="card-body">
                                 {{!-- Candidate Photo --}}
-                                <img src={{picture}} class="rounded-circle mb-3" style="height:165px; width:150px;" />
+                                <img src={{picture}} class="rounded-circle mb-3" alt="Candidate Photo" style="height:165px; width:150px;" />
                                 {{!-- Candidate Name --}}
                                 <h5 class="mb-1">{{first_name}} {{last_name}}</h5>
                                 {{!-- Candidate Party --}}
@@ -91,7 +91,7 @@
                             </div>
                         </a>
                         <div class="card-footer text-right">
-                            <span class="mr-3 match-links"><a href={{twitter_HTML}} id="{{id}}" title="Twitter"><i
+                            <span class="mr-3 match-links"><a href="{{twitter_HTML}}" id="{{id}}" title="Twitter"><i
                                         class="fab fa-twitter"></i></a></span>
                             <span class="mr-3 match-links"><a href="{{official_page}}" id="{{id}}" title="Personal Website"><i
                                         class="fas fa-globe"></i></a></span>
