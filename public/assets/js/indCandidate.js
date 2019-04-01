@@ -16,7 +16,7 @@ $(function () {
             dataId
             + '&' +
             'from=2019-03-24&' +
-            'sortBy=recent&' +
+            'sortBy=recent&language=en&pageSize=3&' +
             'apiKey=400435e5285343fca12fc6110393eab5';
 
         var req = new Request(url);
