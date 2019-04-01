@@ -62,7 +62,7 @@ $(function () {
             dataType: 'json',
             headers: { 'X-API-Key': 'ujXwLjfkOR6Pof7IUaTKVR1MCoWuu9o7Q8iHT4om' }
         }).done(function (data) {
-            // console.log(data);
+            console.log(data);
             console.log("Name: " + data.results[0].name);
             console.log("Date coverage from: " + data.results[0].date_coverage_from);
             console.log("Date coverage to: " + data.results[0].date_coverage_to);
