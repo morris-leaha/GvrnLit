@@ -1,6 +1,7 @@
 var db = require("../models");
 var passport = require("passport");
 var Sequelize = require("sequelize");
+var bcrypt = require("bcrypt");
 // // var candidatesArr = require("../app/data/candidates");
 // var usersArr = require("../app/data/users");
 
@@ -70,21 +71,11 @@ module.exports = function (app) {
     });
   });
 
-  // app.delete("/api/candidate/:id", function (req, res) {
-  //   db.Candidate.destroy({
-  //     where: {
-  //       id: req.params.id
-  //     }
-  //   }).then(function (dbCandidate) {
-  //     res.json(dbCandidate);
-  //   });
-  // });
-
   //======================================================
   //Quiz Route(s) using sequelize 
   //======================================================  
   
-  // Get all examples
+  // Get all questions
   app.get("/api/questions", function (req, res) {
     db.Candidate_Position.findAll({
       attributes: [
@@ -94,20 +85,6 @@ module.exports = function (app) {
       res.json(dbCandidate_Position);
     });
   });
-
-  // Create a new example
-  // app.post("/api/questions", function (req, res) {
-  //   db.Quiz.create(req.body).then(function (dbQuiz) {
-  //     res.json(dbQuiz);
-  //   });
-  // });
-
-  // Delete an example by id
-  // app.delete("/api/questions/:id", function (req, res) {
-  //   db.Quiz.destroy({ where: { id: req.params.id } }).then(function (dbQuiz) {
-  //     res.json(dbQuiz);
-  //   });
-  // });
 
 };
 

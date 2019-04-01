@@ -25,13 +25,13 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/assets/html/profile.html"));
   });
 
-  app.get("/quiz-ALL", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/assets/html/quiz-ALL.html"));
-  });
+  // app.get("/quiz-ALL", function (req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/assets/html/quiz-ALL.html"));
+  // });
 
-  app.get("/candidate", authorizeUser, function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/assets/html/indCandidate.html"));
-  });
+  // app.get("/candidate", authorizeUser, function (req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/assets/html/indCandidate.html"));
+  // });
 
   app.get("/contact-us", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/assets/html/contact.html"));
@@ -43,6 +43,7 @@ module.exports = function (app) {
   // ===============================================================================
   // Handlebars Requests
   // ===============================================================================
+  //All candidates page
   app.get("/allCandidates", function (req, res) {
     db.Candidate.findAll({}).then(function (data) {
       var hbsObject = {
@@ -52,14 +53,28 @@ module.exports = function (app) {
     });
   });
 
-  app.get("/questions", function(req, res) {
-    axios.get(baseURL + "/api/questions/").then(function(response) {
+  // Single Candidate Page
+  app.get("/candidate/:id", function (req, res) {
+    axios.get(baseURL + "/api/candidate/" + req.params.id).then(function (response){
+      console.log(response.data);
+      var hbsObj = {
+        data: response.data
+      }
+      res.render("candidate_profile", hbsObj);
+    }). catch(function(error){
+      console.log(error);
+    })
+  });
+
+  //Quiz Page
+  app.get("/questions", function (req, res) {
+    axios.get(baseURL + "/api/questions/").then(function (response) {
       console.log(response.data);
       var hbsObj2 = {
         data: response.data
       }
       res.render("quiz-ALL", hbsObj2);
-    }).catch(function(error) {
+    }).catch(function (error) {
       console.log(error);
     });
   });
