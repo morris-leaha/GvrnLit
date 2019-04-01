@@ -183,6 +183,21 @@ h3 {
     box-shadow: 0px 6px 14px 0px #0000002e;
 }
 
+.news-link:link {
+    color: #244691;
+}
+
+.news-link:visited {
+    color: #244691;
+    text-decoration: none;
+}
+
+.news-link:hover {
+    color: #6f94e8;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
 /* COMPARISON HTML */
 
 .progress-bar {

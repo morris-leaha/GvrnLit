@@ -1,12 +1,12 @@
 $(function () {
 
-    function getCandidate() {
-        $.get("/api/candidate/:id", function (data) {
-            console.log(data);
-            console.log()
-        });
-    };
-    getCandidate();
+    // function getCandidate() {
+    //     $.get("/api/candidate/:id", function (data) {
+    //         console.log(data);
+    //         console.log()
+    //     });
+    // };
+    // getCandidate();
 
     function newsAPI() {
         var dataId = $("#newsAPI").attr("data-id");
@@ -35,13 +35,21 @@ $(function () {
                     var newsOutlet = (articles[i].source.name);
                     var title = (articles[i].title);
                     var articleUrl = (articles[i].url);
+                    var articleImage = (articles[i].urlToImage);
 
                     console.log("News Outlet: " + newsOutlet);
                     console.log("Title: " + title);
                     console.log("URL: " + articleUrl);
 
-                    //updated HTML 
-                    $("#newsAPI").prepend("News Outlet: " + newsOutlet + "<br>" + "Title: " + title + "<br>" + "URL: " + articleUrl + "<br><br>");
+                    // Populate Data in DOM 
+                    var articleLink = $("<a class='news-link'>").attr("href", articleUrl);
+                    var newsImg = $("<img class='img-fluid article-img mt-2 mb-5'>").attr("src", articleImage);
+                    var titleDiv = $("<div class='news-titleDiv'>").html("<p class='h5 mb-0'>" + title + "</p>");
+                    var newsSourceText = $("<small class='news-source text-muted'>").text("From: " + newsOutlet);
+
+                    var newsDisplayDiv = articleLink.append(titleDiv, newsSourceText, newsImg);
+
+                    $("#newsArticle").append(newsDisplayDiv);
                 };
             });
     }
