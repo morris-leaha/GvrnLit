@@ -6,6 +6,9 @@ module.exports = function(sequelize, DataTypes) {
         state_name: DataTypes.STRING,
         curr_status: DataTypes.STRING,
         twitter_acct: DataTypes.STRING,
+        twitter_HTML: DataTypes.TEXT,
+        official_page: DataTypes.TEXT,
+        picture: DataTypes.TEXT,
         fec_id: DataTypes.STRING,
     },
     {
