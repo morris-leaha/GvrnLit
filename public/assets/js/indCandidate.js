@@ -1,7 +1,5 @@
 $(function () {
 
-    
-
     function getCandidate() {
         $.get("/api/candidate/:id", function (data) {
             console.log(data);
@@ -49,6 +47,35 @@ $(function () {
     }
 
     newsAPI();
+
+    //====================================================
+    //Propublica Finanace API
+    //====================================================
+    function financeAPI() {
+        var dataID = $("#financeAPI").attr("data-id");
+        // var dataID = "Trump";
+        console.log(dataID);
+
+        $.ajax({
+            url: "https://api.propublica.org/campaign-finance/v1/2016/candidates/" + dataID + ".json",
+            type: "GET",
+            dataType: 'json',
+            headers: { 'X-API-Key': 'ujXwLjfkOR6Pof7IUaTKVR1MCoWuu9o7Q8iHT4om' }
+        }).done(function (data) {
+            // console.log(data);
+            console.log("Name: " + data.results[0].name);
+            console.log("Date coverage from: " + data.results[0].date_coverage_from);
+            console.log("Date coverage to: " + data.results[0].date_coverage_to);
+            console.log("Independent expenditures : $" + data.results[0].independent_expenditures);
+            console.log("Total Contributions: $" + data.results[0].total_contributions);
+            console.log("Total Disbursements: $" + data.results[0].total_disbursements);
+            console.log("Total from Individuals: $" + data.results[0].total_from_individuals);
+            console.log("Total from PACs: $" + data.results[0].total_from_pacs);
+        });
+    }
+    financeAPI();
+
+    //need if/else statement for if they have not filed with the FEC for election 
 
 
 });
