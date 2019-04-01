@@ -25,9 +25,9 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/assets/html/profile.html"));
   });
 
-  // app.get("/quiz-ALL", function (req, res) {
-  //   res.sendFile(path.join(__dirname, "../public/assets/html/quiz-ALL.html"));
-  // });
+  app.get("/quiz-ALL", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/assets/html/quiz-ALL.html"));
+  });
 
   // app.get("/candidate", authorizeUser, function (req, res) {
   //   res.sendFile(path.join(__dirname, "../public/assets/html/indCandidate.html"));
@@ -67,17 +67,17 @@ module.exports = function (app) {
   });
 
   //Quiz Page
-  app.get("/questions", function (req, res) {
-    axios.get(baseURL + "/api/questions/").then(function (response) {
-      console.log(response.data);
-      var hbsObj2 = {
-        data: response.data
-      }
-      res.render("quiz-ALL", hbsObj2);
-    }).catch(function (error) {
-      console.log(error);
-    });
-  });
+  // app.get("/questions", function (req, res) {
+  //   axios.get(baseURL + "/api/questions/").then(function (response) {
+  //     console.log(response.data);
+  //     var hbsObj2 = {
+  //       data: response.data
+  //     }
+  //     res.render("quiz-ALL", hbsObj2);
+  //   }).catch(function (error) {
+  //     console.log(error);
+  //   });
+  // });
 
   // If no matching route is found default to home
   // ===============================================================================
