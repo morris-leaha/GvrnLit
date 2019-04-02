@@ -10,21 +10,49 @@ body {
 }
 
 /* INDEX.HTML */
-.home-pg-nav, nav {
+.home-pg-nav, .navigation {
     background: #244691;
     box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
+    border-bottom: 5px solid rgba(183, 62, 62, 1);
+}
+
+.take-quizBTN {
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(183, 62, 62, 1);
+}
+
+.take-quizBTN:hover {
+    background-color: rgb(130, 48, 48);
+    border-color: rgb(130, 48, 48);
+    transform: translateY(2px);
 }
 
 .take-quizBTN:active {
-    transform: translateY(3px);
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(183, 62, 62, 1);
+    transform: translateY(4px);
 }
 
-.signin-btn:active {
-    transform: translateY(3px);
+.signup-btn:hover {
+    color: white;
+    background-color: rgb(130, 48, 48);
+    border-color: rgb(130, 48, 48);
+    transform: translateY(2px);
 }
 
 .signup-btn:active {
-    transform: translateY(3px);
+    color: white;
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(183, 62, 62, 1);
+    transform: translateY(4px);
+}
+
+.signin-btn:hover {
+    transform: translateY(2px);
+}
+
+.signin-btn:active {
+    transform: translateY(4px);
 }
 
 .container {
