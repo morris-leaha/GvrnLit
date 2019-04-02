@@ -10,7 +10,7 @@ body {
 }
 
 /* INDEX.HTML */
-.home-pg-nav, .navigation {
+.home-pg-nav, .navigation, .navbar {
     background: #244691;
     box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
     border-bottom: 5px solid rgba(183, 62, 62, 1);
