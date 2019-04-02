@@ -250,10 +250,17 @@ h3 {
     opacity: 0.7;
 }
 
-/* COMPARISON HTML */
+/* COMPARISON.HTML */
 
 .progress-bar {
     background: #cc0624;
+}
+
+/* VOTINGINFO.HTML */
+
+.card-votingInfo {
+    background: none;
+    box-shadow: none;
 }
 
 /* FOOTER SECTION */
