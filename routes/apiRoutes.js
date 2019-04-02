@@ -56,11 +56,22 @@ module.exports = function (app) {
     });
   });;
 
-  // app.post("/api/candidate", function (req, res) {
-  //   db.Candidate.create(req.body).then(function (dbCandidate) {
-  //     res.json(dbCandidate);
-  //   });
-  // });
+  //======================================================
+  // Contact POST Route
+  //====================================================== 
+
+  app.get("/api/contact", function(req, res) {
+    db.Contact.findAll({}).then(function(dbContact) {
+      res.json(dbContact);
+    });
+  });
+
+  // Create a new example
+  app.post("/api/contact", function (req, res) {
+    db.Contact.create(req.body).then(function (dbContact) {
+      res.json(dbContact);
+    });
+  });
 
   //======================================================
   // Individual Candidate Route  using sequelize
@@ -79,54 +90,17 @@ module.exports = function (app) {
   //======================================================
   //Quiz Route(s) using sequelize 
   //======================================================  
-
+  
   // Get all questions
-  app.get("/api/questions", function (req, res) {
-    db.Candidate_Position.findAll({
-      attributes: [
-        [Sequelize.literal("DISTINCT `question`"), "candidate_position"]
-      ]
-    }).then(function (dbCandidate_Position) {
-      res.json(dbCandidate_Position);
-    });
-  });
+  // app.get("/api/questions", function (req, res) {
+  //   db.Candidate_Position.findAll({
+  //     attributes: [
+  //       [Sequelize.literal("DISTINCT `question`"), "candidate_position"]
+  //     ]
+  //   }).then(function (dbCandidate_Position) {
+  //     res.json(dbCandidate_Position);
+  //   });
+  // });
 
 };
-
-  //======================================================
-  //Get candidate info and answers - not using mysql
-  //======================================================  
-  // app.get("/api/users"), function (req, res) {
-  //   var currentUser = req.body;
-
-  //   for (var i = 0; i < candidatesArr.length; i++) {
-  //     for (var j = 0; j < currentUser.positions.length; j++) {
-  //       if (candidatesArr[i] === currentUser.positions[i]) {
-  //         score++
-  //       }
-  //       bestMatch = candidatesArr[i];
-  //     }
-  //   };
-
-  //   for (var j = 0; j < currentUser.score.length; j++) {
-  //     console.log(currentUser.score[j]);
-  //   };
-
-  //   for (var k = 0; k < candidatesArr.length; k++) {
-  //     console.log(candidatesArr[k].score);
-  //   }
-
-  // }
-
-  // app.get("/api/questions", function (req, res) {
-  //   res.json(candidatesArr);
-  // })
-
-  // app.get("/api/users", function (req, res) {
-  //   res.json(usersArr);
-  // })
-
-  // app.post("/api/users", function (req, res) {
-  //   res.json(usersArr);
-  // })
 
