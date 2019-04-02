@@ -16,42 +16,58 @@ body {
     border-bottom: 5px solid rgba(183, 62, 62, 1);
 }
 
-.take-quizBTN {
+a.home-navigation-link:link {
+    color: rgba(255,255,255,.5);
+}
+
+a.home-navigation-link:visited {
+    color: rgba(255,255,255,.5);
+}
+
+a.home-navigation-link:hover {
+    color: rgba(255,255,255,.75);
+}
+
+a.home-navigation-link:active {
+    color: rgba(255,255,255,.5);
+}
+
+a.take-quizBTN {
     background-color: rgba(183, 62, 62, 1);
     border-color: rgba(183, 62, 62, 1);
 }
 
-.take-quizBTN:hover {
+a.take-quizBTN:hover {
     background-color: rgb(130, 48, 48);
     border-color: rgb(130, 48, 48);
     transform: translateY(2px);
 }
 
-.take-quizBTN:active {
+a.take-quizBTN:active {
     background-color: rgba(183, 62, 62, 1);
     border-color: rgba(183, 62, 62, 1);
     transform: translateY(4px);
 }
 
-.signup-btn:hover {
+a.signin-btn:hover {
+    transform: translateY(2px);
+}
+
+a.signin-btn:active {
+    transform: translateY(4px);
+}
+
+a.signup-btn:hover {
+    color: white;
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(183, 62, 62, 1);
+    transform: translateY(2px);
+}
+
+a.signup-btn:active {
     color: white;
     background-color: rgb(130, 48, 48);
     border-color: rgb(130, 48, 48);
-    transform: translateY(2px);
-}
-
-.signup-btn:active {
-    color: white;
-    background-color: rgba(183, 62, 62, 1);
-    border-color: rgba(183, 62, 62, 1);
-    transform: translateY(4px);
-}
-
-.signin-btn:hover {
-    transform: translateY(2px);
-}
-
-.signin-btn:active {
     transform: translateY(4px);
 }
 
@@ -73,7 +89,8 @@ h3, h4, h5 {
 
 /* NAV-LINKS -- indComparison.html | indCandidate.html | allCandidates.html */
 
-.nav-link:link {
+.allCan-navlink:link {
+    font-size: 1rem;
     color: #efefef;
 }
 
