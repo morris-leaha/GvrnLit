@@ -66,7 +66,7 @@ module.exports = function (app) {
   // Create a new example
   app.post("/api/contact", function (req, res) {
     db.Contact.create(req.body).then(function (dbContact) {
-      res.json(dbContact);
+      // res.json(dbContact);
     });
   });
 
