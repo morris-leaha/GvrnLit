@@ -199,12 +199,19 @@ h3, h4, h5 {
 
 /* ABOUT US PAGE */
 
-#team {
-    font-size: 70px;
-    opacity: .55;
+.team-img {
+    height: 200px; 
+    width: 200px;
+    box-shadow: 7px 4px 20px 0px #0000002e;
 }
 
-#about {
+.team {
+    font-size: 65px;
+    opacity: .55;
+    line-height: initial;
+}
+
+.about {
     font-size: 25px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;

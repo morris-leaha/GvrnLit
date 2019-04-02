@@ -31,90 +31,68 @@
                     alt="logo">
             </a>
             <nav class="my-2 mx-auto">
-                <!-- TAKE QUIZ BUTTON -->
-                <a class="take-quizBTN btn btn-danger px-3" href="/quiz-ALL" title="Click here to find your match!">Take
-                    Our Quiz</a>
+                
             </nav>
+            <!-- TAKE QUIZ BUTTON -->
+            <a class="take-quizBTN btn btn-danger px-3" href="/quiz-ALL" title="Click here to find your match!">Take
+                Our Quiz</a>
             <!-- <a class="my-2 mx-2 px-3 btn btn-outline-light signin-btn" href="/signin" title="Click to Sign In">Sign In</a>
             <a class="my-2 mx-2 btn btn-light signup-btn" href="/signup" title="Click to Sign Up">Sign Up</a> -->
         </div>
     </header>
 
-    <div class="container">
-        <!-- CAROUSEL  -->
-        <br>
+    <!-- <div class="container">
         <main>
             <div id="politicalPartyCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#politicalPartyCarousel" data-slide-to="0"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <!-- image 1 -->
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="../images/aboutus.jpg" alt="First slide" style="width:100%;">
-                    </div>
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="../images/aboutus.jpg" alt="First slide" style="width:100%;">
                 </div>
             </div>
         </main>
-    </div>
-    <br>
-    <br>
-    <br>
+    </div> -->
+
     <div class="container">
-        <!-- ABOUT US text -->
-        <div class="text-center">
-            <p id="about"> We are a small team of Junior developers currently attending the Northwestern's
-                Coding Bootcamp. We created this app in-mind for making voting easier for the millennial population,
-                following basis of a dating app, GvrnLit matches users to the most likely 2020 presidential candidate
-                based on their
-                views answered in our quiz. We believe that everyone should exercise their constitutional right to
-                vote, but we also
-                understand that politics can be overwhelming. With only roughly 60% of eligible voter turnout for the
-                2016 presidential
-                election, GvrnLit hopes to encourage more individuals to vote and to vote with confidence!
-            </p>
-            <br>
-            <h1 id="team">Meet the Team</h1>
+        <div class="row justify-content-center">
+            <div class="col">
+                <h1 class="team text-center mt-0">Meet the Team</h1>
+                <!-- ABOUT US TEXT -->
+                <div class="text-justify">
+                    <p class="about mb-4"> We are a small team of Junior developers currently attending the Northwestern's
+                        Coding Bootcamp. We created this app because we believe that everyone should exercise their constitutional right
+                        to vote, but we also understand that politics can be overwhelming. With only roughly 60% of eligible voter turnout
+                        for the 2016 presidential election, GvrnLit hopes to encourage more individuals to vote and to vote with confidence!
+                    </p>
+                </div>
+            </div>
         </div>
+
         <!-- TEAM HEADSHOTS -->
-        <!-- row 1 -->
-        <br>
-        <br>
-        <div class="row text-center">
-            <div class="col-6">
-                <img src="../images/santiago.jpg" alt="santiago.jpg" class="rounded">
-                <br>
-                <h3>Santiago </h3>
-                <p id="profile">
+        <div class="row text-center mt-2">
+            <div class="col-lg-3 col-md-6">
+                <img src="../images/santiago.jpg" alt="santiago.jpg" class="rounded-circle team-img">
+                <h3 class="mt-2">Santiago </h3>
+                <p id="profile" class="mb-3">
                     Back-end js, databases, frameworks, logic
                 </p>
             </div>
-            <div class="col-6">
-                <img src="../images/nicole.jpg" alt="nicole.jpg" class="rounded">
-                <br>
-                <h3>Nicole</h3>
-                <p id="profile">
+            <div class="col-lg-3 col-md-6">
+                <img src="../images/nicole.jpg" alt="nicole.jpg" class="rounded-circle team-img">
+                <h3 class="mt-2">Nicole</h3>
+                <p id="profile" class="mb-3">
                     Back-end js, databases, frameworks, logic
                 </p>
             </div>
-        </div>
-        <br>
-        <br>
-        <!-- row 2 -->
-        <div class="row text-center">
-            <div class="col-6">
-                <img src="../images/leah.jpg" alt="leah.jpg" class="rounded">
-                <br>
-                <h3>Leah</h3>
-                <p id="profile">
-                    Front-end html, js, frameworks
+            <div class="col-lg-3 col-md-6">
+                <img src="../images/leah.jpg" alt="leah.jpg" class="rounded-circle team-img">
+                <h3 class="mt-2">Leah</h3>
+                <p id="profile" class="mb-3">
+                    Front-end html/Back-end js, frameworks
                 </p>
             </div>
-            <div class="col-6">
-                <img src="../images/este.jpg" alt="este.jpg" class="rounded">
-                <br>
-                <h3>Estevan </h3>
-                <p id="profile">
+            <div class="col-lg-3 col-md-6">
+                <img src="../images/este.jpg" alt="este.jpg" class="rounded-circle team-img">
+                <h3 class="mt-2">Estevan </h3>
+                <p id="profile" class="mb-3">
                     Front-end, images, styling
                 </p>
             </div>
@@ -123,18 +101,18 @@
 
 
     <!-- FOOTER -->
-    <footer class="footer sticky-footer mt-5">
+    <footer class="footer sticky-footer mt-3">
         <div class="container text-center">
             <!-- FOOTER 'NAV' -->
             <div class="row footer-nav">
                 <div class="col">
-                    <a href="#" class="footer-links">About Us</a>
+                    <a href="../html/aboutus.html" class="footer-links">About Us</a>
                 </div>
                 <div class="col">
                     <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i class="fab fa-github fa-lg"></i></a>
                 </div>
                 <div class="col">
-                    <a href="#" class="footer-links">Contact</a>
+                    <a href="../html/contact.html" class="footer-links">Contact</a>
                 </div>
             </div>
             <!-- FOOTER COPYRIGHT -->
