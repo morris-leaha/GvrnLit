@@ -48,9 +48,6 @@ module.exports = function (app) {
   //====================================================== 
 
   app.get("/api/candidate", function (req, res) {
-    // Here we add an "include" property to our options in our findAll query
-    // We set the value to an array of the models we want to include in a left outer join
-    // In this case, just db.Post
     db.Candidate.findAll({}).then(function (dbCandidate) {
       res.json(dbCandidate);
     });
@@ -80,27 +77,11 @@ module.exports = function (app) {
     db.Candidate.findOne({
       where: {
         id: req.params.id
-      }
+      } 
     }).then(function (dbCandidate) {
       res.json(dbCandidate);
-      console.log(dbCandidate);
+      res.end()
     });
   });
-
-  //======================================================
-  //Quiz Route(s) using sequelize 
-  //======================================================  
-  
-  // Get all questions
-  // app.get("/api/questions", function (req, res) {
-  //   db.Candidate_Position.findAll({
-  //     attributes: [
-  //       [Sequelize.literal("DISTINCT `question`"), "candidate_position"]
-  //     ]
-  //   }).then(function (dbCandidate_Position) {
-  //     res.json(dbCandidate_Position);
-  //   });
-  // });
-
 };
 

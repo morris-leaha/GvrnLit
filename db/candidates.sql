@@ -1,7 +1,3 @@
-DROP DATABASE IF EXISTS 2020_electionsDB;
-
-CREATE DATABASE 2020_electionsDB;
-
 USE 2020_electionsDB;
 
 CREATE TABLE candidates (

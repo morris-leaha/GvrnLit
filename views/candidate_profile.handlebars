@@ -26,54 +26,34 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark p-3 px-md-4 mb-3">
+        <nav class="navigation navbar navbar-expand-md navbar-dark pt-2 pb-3 pr-3 pl-2 mb-3">
             <!-- NAVBAR BRAND -->
             <a class="navbar-brand" href="/index">
                 <img src="../images/gavel-stars_transparent.png" width="140" height="60"
                     class="d-inline-block align-top" alt="logo">
             </a>
-
             <!-- NAVBAR TOGGLER BUTTON -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!-- NAVBAR LINKS -->
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto">
                     <li id="navCandidates" class="nav-item">
                         <a class="nav-link" href="/allCandidates" title="Click to See All Candidates">All Candidates</a>
                     </li>
-                    {{!-- <li id="navGetInvolved" class="nav-item">
-                        <a class="nav-link" href="#" title="Click to Get Involved">Get Involved</a>
-                    </li> --}}
+                    <li id="navVotingInfo" class="nav-item">
+                        <a class="nav-link" href="/voting-info" title="Click for Voting Information">Voting
+                            Information</a>
+                    </li>
                 </ul>
-                <div id="user-dropdown" class="dropdown">
-                    <ul class="navbar-nav mr-auto">
-                        <li id="user-dropdown" class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user-circle fa-lg"></i> User<span id="nav-username"></span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="profile.html" id="profile"><i
-                                        class="fas fa-user-cog"></i>
-                                    Profile</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="index.html" id="sign-out"><i
-                                        class="fas fa-sign-out-alt"></i>
-                                    Sign
-                                    Out</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                <!-- TAKE QUIZ BUTTON -->
+                <a class="take-quizBTN btn btn-danger px-3" href="/quiz-ALL" title="Click here to find your match!">Take
+                    Our Quiz</a>
             </div>
         </nav>
     </header>
-
 
     <div class="container">
 
@@ -130,29 +110,8 @@
                         <div id="newsAPI" class="card-body" data-id={{data.last_name}}>
                             <div id="newsArticle" class="inline-block"></div>
                         </div>
-                         <div class="card-footer">Powered by <a href=
-                            "https://newsapi.org/" target="_blank"> News API </a></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- INDIVIDUAL CANDIDATE CAMPAIGN INFORMATION -->
-            <div class="row justify-content-center">
-                <div class="col">
-                    <div class="card mt-3 mb-3">
-                        <h5 class="card-header mb-0">Voting Information</h5>
-                        <div class="card-body" style="margin: auto">
-                            {{!-- <div id="financeAPI" data-id={{data.fec_id}}></div> --}}
-                            <script type="text/javascript" src="https://tool.votinginfoproject.org/app.js"></script>
-                            <div id="_vit"></div>
-                            <script type="text/javascript">vit.load({
-                                    modal: true,
-                                    title: 'Voting Information Tool',
-                                    width: '640px', height: '480px',
-                                    colors: { 'header': '#229acd', 'landscapeBackgroundHeader': '#228a9d' },
-                                    language: 'en'
-                                });</script>
-                        </div>
+                        <div class="card-footer">Powered by <a href="https://newsapi.org/" target="_blank"> News API
+                            </a></div>
                     </div>
                 </div>
             </div>
@@ -167,14 +126,14 @@
             <!-- FOOTER 'NAV' -->
             <div class="row footer-nav">
                 <div class="col">
-                    <a href="/aboutus.html" class="footer-links">About Us</a>
+                    <a href="../public/assets/html/aboutus.html" class="footer-links">About Us</a>
                 </div>
                 <div class="col">
                     <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i
                             class="fab fa-github fa-lg"></i></a>
                 </div>
                 <div class="col">
-                    <a href="/contact.html" class="footer-links">Contact</a>
+                    <a href="../public/assets/html/contact.html" class="footer-links">Contact</a>
                 </div>
             </div>
             <!-- FOOTER COPYRIGHT -->

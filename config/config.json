@@ -1,7 +1,7 @@
 {
     "development": {
       "username": "root",
-      "password": "Password123",
+      "password": "",
       "database": "2020_electionsDB",
       "host": "localhost",
       "dialect": "mysql"
