@@ -1,13 +1,22 @@
-$(function () {
+$(document).ready(function() {
 
-    function submitContact(contact) {
-        
+    $(document).on("click", ".submit-btn", insertContact);
+
+    
+    function insertContact (event) {
         event.preventDefault();
-        $.post("/api/contact", contact, function () {
-            window.location.href = "/index";
+        var contact = {
+            name: $("#name").val().trim(),
+            email: $("#email").val().trim(),
+            subject: $("#subject").val().trim(),
+            textArea: $("#textArea").val().trim()
+        };
+        console.log(contact);
+        $.ajax({
+            url: "/api/contact",
+            type: "POST",
+            data: contact,
         });
-    }
-
-    submitContact();
-})
-
+        window.location.href = "/index";
+    };
+});
