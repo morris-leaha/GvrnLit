@@ -6,16 +6,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
     <!-- LINK TO GOOGLE FONTS -->
     <!-- LINK TO FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Page Title -->
     <title>GvrnLit</title>
     <!-- Favicon -->
@@ -23,25 +22,35 @@
 </head>
 
 <body>
-
     <header>
-        <div class="home-pg-nav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3">
-            <a href="index.html">
-                <img src="../images/gavel-stars_transparent.png" class="my-0 mr-md-auto" width="140" height="60" class="d-inline-block align-top"
-                    alt="logo">
+        <nav class="navigation navbar navbar-expand-md navbar-dark pt-2 pb-3 pr-3 pl-2 mb-3">
+            <!-- NAVBAR BRAND -->
+            <a class="navbar-brand" href="/index">
+                <img src="../images/gavel-stars_transparent.png" width="140" height="60"
+                    class="d-inline-block align-top" alt="logo">
             </a>
-            <a class="nav-link p-0 ml-4" href="/allCandidates" title="Click to See All Candidates">All Candidates</a>
-            <nav class="my-2 mx-auto">
+            <!-- NAVBAR TOGGLER BUTTON -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NAVBAR LINKS -->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto">
+                    <li id="navCandidates" class="nav-item">
+                        <a class="nav-link" href="/allCandidates" title="Click to See All Candidates">All Candidates</a>
+                    </li>
+                    <li id="navVotingInfo" class="nav-item">
+                        <a class="nav-link" href="/voting-info" title="Click for Voting Information">Voting
+                            Information</a>
+                    </li>
+                </ul>
                 <!-- TAKE QUIZ BUTTON -->
-                <a class="take-quizBTN btn btn-danger px-3" href="../html/quiz-ALL.html" title="Click here to find your match!">Take
+                <a class="take-quizBTN btn btn-danger px-3" href="/quiz-ALL" title="Click here to find your match!">Take
                     Our Quiz</a>
-
-            </nav>
-            <a class="my-2 mx-2 px-3 btn btn-outline-light signin-btn" href="/signin" title="Click to Sign In">Sign In</a>
-            <a class="my-2 mx-2 btn btn-light signup-btn" href="/signup" title="Click to Sign Up">Sign Up</a>
-        </div>
+            </div>
+        </nav>
     </header>
-
     <div class="container">
         <!-- CAROUSEL  -->
         <main>
@@ -55,19 +64,19 @@
                 <div class="carousel-inner">
                     <!-- image 1 -->
                     <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="../images/Democrat.jpg" alt="First slide" style="width:100%;">
+                        <img class="img-fluid" src="../images/Democrat.jpg" alt="First slide" style="width:100%;">
                     </div>
                     <!-- image 2 -->
                     <div class="carousel-item">
-                        <img class="d-block img-fluid" src="../images/Green.jpg" alt="Second slide" style="width:100%;">
+                        <img class="img-fluid" src="../images/Green.jpg" alt="Second slide" style="width:100%;">
                     </div>
                     <!-- image 3 -->
                     <div class="carousel-item">
-                        <img class="d-block img-fluid" src="../images/Rep.jpg" alt="Third slide" style="width:100%;">
+                        <img class="img-fluid" src="../images/Rep.jpg" alt="Third slide" style="width:100%;">
                     </div>
                     <!-- image 4 -->
                     <div class="carousel-item">
-                        <img class="d-block img-fluid" src="../images/Libri.jpg" alt="Fourth slide" style="width:100%;">
+                        <img class="img-fluid" src="../images/Libri.jpg" alt="Fourth slide" style="width:100%;">
                     </div>
                     <a class="carousel-control-prev" href="#politicalPartyCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -79,14 +88,10 @@
                     </a>
                 </div>
             </div>
-
-
-
             <!-- KEY Categories -->
             <div class="row justify-content-center">
                 <div class="col">
                     <div class="political-key-card mt-5">
-
                         <!-- ROW 1 of Keys -->
                         <div class="row text-center">
                             <div class="col">
@@ -131,23 +136,21 @@
                 </div>
             </div>
         </main>
-
     </div>
-
-
     <!-- FOOTER -->
     <footer class="footer sticky-footer mt-5">
         <div class="container text-center">
             <!-- FOOTER 'NAV' -->
             <div class="row footer-nav">
                 <div class="col">
-                    <a href="../html/aboutus.html" class="footer-links">About Us</a>
+                    <a href="/about-us" class="footer-links">About Us</a>
                 </div>
                 <div class="col">
-                    <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i
+                            class="fab fa-github fa-lg"></i></a>
                 </div>
                 <div class="col">
-                    <a href="../html/contact.html" class="footer-links">Contact</a>
+                    <a href="/contact-us" class="footer-links">Contact</a>
                 </div>
             </div>
             <!-- FOOTER COPYRIGHT -->
@@ -158,16 +161,17 @@
             </div>
         </div>
     </footer>
-
     <!-- Per bootstrap: jQuery, Popper, Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- Our JS File -->
-    <!-- <script src="main.js"></script> -->
+
 </body>
 
 </html>

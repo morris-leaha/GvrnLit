@@ -3,209 +3,209 @@ html, body {
     /* background-color: #efefef; default grey background color*/
     background-color: white;
 }
-
 body {
     display: flex;
     flex-direction: column;
 }
-
 /* INDEX.HTML */
-.home-pg-nav, nav {
+.home-pg-nav, .navigation, .navbar {
     background: #244691;
     box-shadow: inset 0px 3px 20px 0px rgba(53, 53, 53, 0.36);
+    border-bottom: 5px solid rgba(183, 62, 62, 1);
 }
-
-.take-quizBTN:active {
-    transform: translateY(3px);
+a.home-navigation-link:link {
+    color: rgba(255,255,255,.5);
 }
-
-.signin-btn:active {
-    transform: translateY(3px);
+a.home-navigation-link:visited {
+    color: rgba(255,255,255,.5);
 }
-
-.signup-btn:active {
-    transform: translateY(3px);
+a.home-navigation-link:hover {
+    color: rgba(255,255,255,.75);
 }
-
+a.home-navigation-link:active {
+    color: rgba(255,255,255,.5);
+}
+a.take-quizBTN {
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(183, 62, 62, 1);
+}
+a.take-quizBTN:hover {
+    background-color: rgb(130, 48, 48);
+    border-color: rgb(130, 48, 48);
+    transform: translateY(2px);
+}
+a.take-quizBTN:active {
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(183, 62, 62, 1);
+    transform: translateY(4px);
+}
+a.signin-btn:hover {
+    transform: translateY(2px);
+}
+a.signin-btn:active {
+    transform: translateY(4px);
+}
+a.signup-btn:hover {
+    color: white;
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(183, 62, 62, 1);
+    transform: translateY(2px);
+}
+a.signup-btn:active {
+    color: white;
+    background-color: rgb(130, 48, 48);
+    border-color: rgb(130, 48, 48);
+    transform: translateY(4px);
+}
 .container {
     flex: 1 0 auto;
 }
-
 .carousel {
     box-shadow: 2px 6px 20px 0px rgba(53, 53, 53, 0.31);
 }
-
 h3, h4, h5 {
     color: #d0222f;
 }
-
 .fa {
     color: #2d3d9e;
 }
-
 /* NAV-LINKS -- indComparison.html | indCandidate.html | allCandidates.html */
-
-.nav-link:link {
+.allCan-navlink:link {
+    font-size: 1rem;
     color: #efefef;
 }
-
 .nav-link:visited {
     color: #efefef;
     text-decoration: none;
 }
-
 .nav-link:hover {
     color: #9a9b9e;
     text-decoration: none;
 }
-
 /* PROFILE.HTML */
-
 .card {
-    box-shadow: 2px 6px 20px 0px rgba(53, 53, 53, 0.31);
+    box-shadow: 5px 5px 20px 0px rgba(53, 53, 53, 0.31);
 }
-
 .user-photo {
     box-shadow: 0px 6px 14px 0px #0000002e;
 }
-
 .match-photo {
     height: 90px;
     width: 90px;
     box-shadow: 0px 6px 14px 0px #0000002e;
 }
-
 .cand-card:hover {
     transform: translateY(2px);
 }
-
 .candidate-card:link {
     color: #424242;
 }
-
 .candidate-card:visited {
     color: #424242;
 }
-
 .candidate-card:hover {
     background-color: rgba(183, 62, 62, 0.13);
     text-decoration: none;
 }
-
 .candidate-card:active {
     background-color: rgba(208, 63, 63, 0.363);
     text-decoration: none;
 }
-
 .match-links a:link {
     color: #424242;
 }
-
 .match-links a:visited {
     color: #424242;
     text-decoration: none;
 }
-
 .match-links a:hover {
     color: rgba(183, 62, 62, 0.973);
     text-decoration: none;
 }
-
 .match-links a:active {
     color: rgb(126, 42, 42);
     text-decoration: none;
 }
-
 /* QUIZ.HTML */
-
 .submit-quiz-btn {
     background-color: rgba(183, 62, 62, 1);
     border-color: rgba(0, 0, 0, 0.72);
 }
-
 .submit-quiz-btn:hover {
     background-color: rgb(130, 48, 48);
     border-color: rgba(0, 0, 0, 0.72);
     transform: translateY(1px);
 }
-
 .submit-quiz-btn:active {
     background-color: rgba(183, 62, 62, 1);
     border-color: rgba(0, 0, 0, 0.72);
     transform: translateY(2px);
 }
-
 .thumbs-btn:hover {
     transform: translateY(1px);
     background: rgba(220, 220, 220, 0.55);
 }
-
 .thumbs-btn:active {
     transform: translateY(4px);
 }
-
 .fa-thumbs-up {
     color: #78a749;
 }
-
 .fa-thumbs-down {
     color: rgba(183, 62, 62, 1);
 }
-
 /* ABOUT US PAGE */
-
-#team {
-    font-size: 70px;
-    opacity: .55;
+.team-img {
+    height: 200px; 
+    width: 200px;
+    box-shadow: 7px 4px 20px 0px #0000002e;
 }
-
-#about {
+.team {
+    font-size: 65px;
+    opacity: .55;
+    line-height: initial;
+}
+.about {
     font-size: 25px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
 }
-
 h3 {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
 }
-
-#profile {
+.profile {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     opacity: .55;
     font-size: 20px;
 }
-
 /* IND CANDIDATE HTML */
-
 .indCand-photo {
     box-shadow: 0px 6px 14px 0px #0000002e;
 }
-
 .news-link:link {
     color: #244691;
 }
-
 .news-link:visited {
     color: #244691;
     text-decoration: none;
 }
-
 .news-link:hover {
     color: #6f94e8;
     text-decoration: none;
     opacity: 0.7;
 }
-
-/* COMPARISON HTML */
-
+/* COMPARISON.HTML */
 .progress-bar {
     background: #cc0624;
 }
-
+/* VOTINGINFO.HTML */
+.card-votingInfo {
+    background: none;
+    box-shadow: none;
+}
 /* FOOTER SECTION */
-
 .sticky-footer {
     flex-shrink: 0;
     background: #244691;
@@ -214,30 +214,87 @@ h3 {
     font-size: 0.65rem;
     color: #8ea3cd;
 }
-
 .footer-links:link {
     font-size: 1rem;
     color: #8ea3cd;
 }
-
 .footer-links:visited {
     font-size: 1rem;
     color: #8ea3cd;
     text-decoration: none;
 }
-
 .footer-links:hover {
     font-size: 1rem;
     color: rgba(255,255,255,.75);
     text-decoration: none;
 }
-
 .footer-links:active {
     font-size: 1rem;
     color: #8ea3cd;
     text-decoration: none;
 }
-
 .footer-nav {
     margin: 1.5rem;
+}
+
+/* Sign In and Up */
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+.input-field {
+    border: none;
+}
+.input-field:focus {
+    border: none;
+}
+.form-control:focus {
+    border-color: white;
+    box-shadow: none;
+}
+a.redirect {
+    font-size: 0.88rem;
+}
+.login-redirects a:link {
+    color: black;
+}
+.login-redirects a:visited {
+    color: black;
+    text-decoration: none;
+}
+.login-redirects a:hover {
+    color: #707070;
+    text-decoration: none;
+}
+.login-redirects a:active {
+    color: #353535;
+    text-decoration: none;
+}
+.sign-up-btn {
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+.sign-up-btn:hover {
+    transform: translateY(1px);
+    background-color:  rgb(130, 48, 48);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+.sign-up-btn:active {
+    transform: translateY(2px);
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+.sign-in-btn {
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+.sign-in-btn:hover {
+    transform: translateY(1px);
+    background-color:  rgb(130, 48, 48);
+    border-color: rgba(0, 0, 0, 0.72);
+}
+.sign-in-btn:active {
+    transform: translateY(2px);
+    background-color: rgba(183, 62, 62, 1);
+    border-color: rgba(0, 0, 0, 0.72);
 }

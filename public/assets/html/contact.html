@@ -7,84 +7,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/login-signup.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
     <!-- LINK TO GOOGLE FONTS -->
     <!-- LINK TO FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Page Title -->
     <title>GvrnLit</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/favicomatic-transparent/favicon-32x32.png" sizes="16x16" />
-
 </head>
 
 <body>
     <!-- LOGO -->
     <header>
-        <div class="row mb-4">
-            <div class="col logo-col">
-                <div class="title text-center mt-3 mb-4">
-                    <img src="../images/gavel-stars_transparent.png" class="img-fluid" alt="logo" />
-                </div>
+        <nav class="navigation navbar navbar-expand-md navbar-dark pt-2 pb-3 pr-3 pl-2 mb-3">
+            <!-- NAVBAR BRAND -->
+            <a class="navbar-brand" href="/index">
+                <img src="../images/gavel-stars_transparent.png" width="140" height="60"
+                    class="d-inline-block align-top" alt="logo">
+            </a>
+            <!-- NAVBAR TOGGLER BUTTON -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NAVBAR LINKS -->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto">
+                    <li id="navCandidates" class="nav-item">
+                        <a class="nav-link" href="/allCandidates" title="Click to See All Candidates">All Candidates</a>
+                    </li>
+                    <li id="navVotingInfo" class="nav-item">
+                        <a class="nav-link" href="/voting-info" title="Click for Voting Information">Voting
+                            Information</a>
+                    </li>
+                </ul>
+                <!-- TAKE QUIZ BUTTON -->
+                <a class="take-quizBTN btn btn-danger px-3" href="/quiz-ALL" title="Click here to find your match!">Take
+                    Our Quiz</a>
             </div>
-        </div>
+        </nav>
     </header>
-
     <div class="container">
         <main>
             <!-- CONTACT -->
             <div class="row justify-content-center">
                 <div class="col-lg-5">
-                    <div class="user-signin mt-5">
-                        <div class="user-signup-title mb-4">
+                    <div class="user-contact mt-4">
+                        <div class="user-contact-title mb-4">
                             <h3 class="text-center">Contact Us</h3>
                         </div>
-                        <div class="user-signin-div pt-0">
-
-                            <form action="/api/contact" method="POST">
+                        <div class="user-contact-div pt-0">
+                            <form method="POST">
                                 <div class="form-row">
                                     <!-- NAME -->
                                     <div class="form-group input-group col">
                                         <div class="input-group-prepend">
-                                            <span class="pt-2 border-bottom border-dark rounded-0"><i class="fas fa-user fa-lg"></i></span>
+                                            <span class="pt-2 border-bottom border-dark rounded-0"><i
+                                                    class="fas fa-user fa-lg"></i></span>
                                         </div>
-                                        <input type="name" class="form-control input-field border-bottom border-dark rounded-0"
-                                            name="name" id ="name" value= "" placeholder=" Name" />
+                                        <input type="name"
+                                            class="form-control input-field border-bottom border-dark rounded-0"
+                                            name="name" id="name" placeholder=" Name" />
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <!-- EMAIL -->
                                     <div class="form-group input-group col">
                                         <div class="input-group-prepend">
-                                            <span class="pt-2 border-bottom border-dark rounded-0"><i class="fas fa-envelope fa-lg"></i></span>
+                                            <span class="pt-2 border-bottom border-dark rounded-0"><i
+                                                    class="fas fa-envelope fa-lg"></i></span>
                                         </div>
-                                        <input type="email" class="form-control input-field border-bottom border-dark rounded-0"
-                                          name="email"  id="email" value= "" placeholder=" Email">
+                                        <input type="email"
+                                            class="form-control input-field border-bottom border-dark rounded-0"
+                                            name="email" id="email" placeholder=" Email">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <!-- SUBJECT -->
                                     <div class="form-group input-group col">
                                         <div class="input-group-prepend">
-                                            <span class="pt-2 border-bottom border-dark rounded-0"></span>
+                                            <span class="pt-2 border-bottom border-dark rounded-0"><i
+                                                    class="fas fa-edit fa-lg"></i></span>
                                         </div>
-                                        <input type="subject" class="form-control input-field border-bottom border-dark rounded-0"
-                                            name="subject" id="subject" value= "" placeholder=" Subject">
+                                        <input type="subject"
+                                            class="form-control input-field border-bottom border-dark rounded-0"
+                                            name="subject" id="subject" placeholder=" Subject">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <!-- TEXT AREA -->
-                                    <div class="form-group input-group col">
-                                        <span class="pt-2 border-bottom border-dark rounded-0"></span>
-                                        <textarea class="form-control input-field border-bottom border-dark rounded-0" id="textArea" value= "" rows="5" name ="textArea" placeholder="Tell us what you need"></textarea>
+                                    <div class="form-group input-group border border-dark mx-1 col">
+                                        <span class="pt-2"></span>
+                                        <textarea class="form-control input-field" id="textArea" rows="5"
+                                            name="textArea" placeholder="Tell us what you need"></textarea>
                                     </div>
                                 </div>
                                 <!-- SUBMIT BUTTON -->
-                                <button type="submit" value="submit" class="btn btn-danger sign-in-btn my-2" id="submit"> Submit </button>
+                                <button type="submit" value="submit" class="btn btn-danger sign-in-btn submit-btn my-2"
+                                    id="submit"> Submit </button>
                             </form>
                         </div>
                     </div>
@@ -92,23 +117,44 @@
             </div>
         </main>
     </div>
-
     <!-- FOOTER -->
-    <footer class="footer sticky-footer">
+    <footer class="footer sticky-footer mt-5">
         <div class="container text-center">
-            <span>Copyright &copy; 2019</span>
+            <!-- FOOTER 'NAV' -->
+            <div class="row footer-nav">
+                <div class="col">
+                    <a href="/about-us" class="footer-links">About Us</a>
+                </div>
+                <div class="col">
+                    <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i
+                            class="fab fa-github fa-lg"></i></a>
+                </div>
+                <div class="col">
+                    <a href="/contact-us" class="footer-links">Contact</a>
+                </div>
+            </div>
+            <!-- FOOTER COPYRIGHT -->
+            <div class="row">
+                <div class="col">
+                    <span>Copyright &copy; 2019</span>
+                </div>
+            </div>
         </div>
     </footer>
-
     <!-- Per bootstrap: jQuery, Popper, Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <!-- Our JS File -->
-    <!-- <script src="main.js"></script> -->
+    <script src="../js/contact.js"></script>
 </body>
 
 </html>

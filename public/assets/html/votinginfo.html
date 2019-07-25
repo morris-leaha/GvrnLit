@@ -6,7 +6,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,7 +15,6 @@
     <!-- LINK TO FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
     <!-- Page Title -->
     <title>GvrnLit</title>
     <!-- Favicon -->
@@ -24,7 +22,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navigation navbar navbar-expand-md navbar-dark pt-2 pb-3 pr-3 pl-2 mb-3">
             <!-- NAVBAR BRAND -->
@@ -54,86 +51,40 @@
             </div>
         </nav>
     </header>
-
     <div class="container">
-
-        <div id="test"></div>
-
-        <main>
-            <!-- INDIVIDUAL CANDIDATE -->
-            <div class="row justify-content-center">
-                <div class="col-lg-5 col-md-12">
-                    <div class="indCand-profile mt-3">
-                        <div class="text-center">
-                            <!-- Candidate Photo -->
-                            <img src={{data.picture}} class="indCand-photo img-fluid rounded-circle"
-                                alt="Candidate Photo" style="height: 225px; width: 200px;" />
-                            <!-- Candidate Name -->
-                            <h3 class="mt-3" id="profile-indCandName">{{data.first_name}} {{data.last_name}}</h3>
-                            <!-- Candidate Party -->
-                            <h6 class="mt-3 mb-4" id="profile-indCandParty">{{data.party_name}} Party</h6>
-                        </div>
-                        <!-- Individual Candidate Links -->
-                        <div class="text-center mt-3">
-                            <div class="row">
-                                <!-- Individual Candidate Twitter -->
-                                <div class="col match-links match-twitter">
-                                    <a href="{{data.twitter_HTML}}" target="_blank" id="indCanTwitter"
-                                        title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
-                                </div>
-                                <!-- Individual Candidate Website -->
-                                <div class="col match-links match-website">
-                                    <a href="{{data.official_page}}" target="_blank" id="indCanWebsite"
-                                        title="Personal Website"><i class="fas fa-globe fa-lg"></i></a>
-                                </div>
-                                <!-- Individual Candidate Instagram -->
-                                <div class="col match-links match-insta">
-                                    <a href="{{data.instagram_HTML}}" target="_blank" id="indCanInsta"
-                                        title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
-                                </div>
-                                <!-- Individual Candidate Facebook -->
-                                <div class="col match-links match-facebook">
-                                    <a href="{{data.facebook_HTML}}" target="_blank" id="indCanFB" title="Facebook"><i
-                                            class="fab fa-facebook-square fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="card card-votingInfo border-0 overflow-auto">
+                    <div class="card-body" style="margin: auto">
+                        <script type="text/javascript" src="https://tool.votinginfoproject.org/app.js"></script>
+                        <div id="_vit"></div>
+                        <script type="text/javascript">vit.load({
+                                modal: true,
+                                title: 'Voting Information Tool',
+                                width: '640px', height: '480px',
+                                colors: { 'header': '#229acd', 'landscapeBackgroundHeader': '#228a9d' },
+                                language: 'en'
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
-
-            <!-- INDIVIDUAL CANDIDATE RECENT NEWS -->
-            <div class="row justify-content-center">
-                <div class="col">
-                    <div class="card mt-5 mb-4">
-                        <h5 class="card-header mb-0">Recent News</h5>
-                        <div id="newsAPI" class="card-body" data-id={{data.last_name}}>
-                            <div id="newsArticle" class="inline-block"></div>
-                        </div>
-                        <div class="card-footer">Powered by <a href="https://newsapi.org/" target="_blank"> News API
-                            </a></div>
-                    </div>
-                </div>
-            </div>
-
-        </main>
-
+        </div>
     </div>
-
     <!-- FOOTER -->
     <footer class="footer sticky-footer mt-5">
         <div class="container text-center">
             <!-- FOOTER 'NAV' -->
             <div class="row footer-nav">
                 <div class="col">
-                    <a href="../public/assets/html/aboutus.html" class="footer-links">About Us</a>
+                    <a href="/about-us" class="footer-links">About Us</a>
                 </div>
                 <div class="col">
                     <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i
                             class="fab fa-github fa-lg"></i></a>
                 </div>
                 <div class="col">
-                    <a href="../public/assets/html/contact.html" class="footer-links">Contact</a>
+                    <a href="/contact-us" class="footer-links">Contact</a>
                 </div>
             </div>
             <!-- FOOTER COPYRIGHT -->
@@ -144,7 +95,6 @@
             </div>
         </div>
     </footer>
-
     <!-- Per bootstrap: jQuery, Popper, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -155,8 +105,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <!-- Our JS File -->
-    <script src="/js/indCandidate.js"" type=" text/javascript"> </script> </body> </html>
+</body>
+
+</html>

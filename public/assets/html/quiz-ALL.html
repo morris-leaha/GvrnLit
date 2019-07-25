@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
     <!-- LINK TO GOOGLE FONTS -->
     <!-- LINK TO FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Page Title -->
     <title>GvrnLit</title>
     <!-- Favicon -->
@@ -25,49 +25,31 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark p-3 px-md-4 mb-3">
+        <nav class="navigation navbar navbar-expand-md navbar-dark pt-2 pb-3 pr-3 pl-2 mb-3">
             <!-- NAVBAR BRAND -->
-            <a class="navbar-brand" href="index.html">
-                <img src="../images/gavel-stars_transparent.png" width="140" height="60" class="d-inline-block align-top"
-                    alt="logo">
+            <a class="navbar-brand" href="/index">
+                <img src="../images/gavel-stars_transparent.png" width="140" height="60"
+                    class="d-inline-block align-top" alt="logo">
             </a>
-
             <!-- NAVBAR TOGGLER BUTTON -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <!-- NAVBAR LINKS -->
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto">
                     <li id="navCandidates" class="nav-item">
-                        <a class="nav-link" href="/allCandidates" title="Click to See All Candidates">All Candidates<span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/allCandidates" title="Click to See All Candidates">All Candidates</a>
+                    </li>
+                    <li id="navVotingInfo" class="nav-item">
+                        <a class="nav-link" href="/voting-info" title="Click for Voting Information">Voting
+                            Information</a>
                     </li>
                 </ul>
-                <!-- NAVBAR USER DROPDOWN MENU -->
-                <!-- <div id="user-dropdown" class="dropdown">
-                    <ul class="navbar-nav mr-auto">
-                        <li id="user-dropdown" class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user-circle fa-lg"></i> User<span id="nav-username"></span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown"> -->
-                <!-- LINK TO USER PROFILE.HTML -->
-                <!-- <a class="dropdown-item" href="profile.html" id="profile"><i class="fas fa-user-cog"></i>
-                                    Profile</a>
-                                <div class="dropdown-divider"></div> -->
-                <!-- LINK TO SIGN OUT -->
-                <!-- <a class="dropdown-item" href="index.html" id="sign-out"><i class="fas fa-sign-out-alt"></i>
-                                    Sign
-                                    Out</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div> -->
-            </div>
+                <!-- TAKE QUIZ BUTTON -->
+                <a class="take-quizBTN btn btn-danger px-3" href="/quiz-ALL" title="Click here to find your match!">Take
+                    Our Quiz</a>
             </div>
         </nav>
     </header>
@@ -83,7 +65,8 @@
                         <div class="card-body">
                             <i class="fa fa-fist-raised fa-3x mb-2"></i>
                             <h5>Social Issues</h5>
-                            <label for="q1" class="h5 text-justify question-text">Should the U.S. build a physical wall between
+                            <label for="q1" class="h5 text-justify question-text">Should the U.S. build a physical wall
+                                between
                                 Mexico and the U.S.?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -91,7 +74,8 @@
                                             class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id="b2" class="thumbs-btn border-0 rounded" data-id="0"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b2" class="thumbs-btn border-0 rounded" data-id="0"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +90,8 @@
                         <div class="card-body">
                             <i class="fa fa-fingerprint fa-3x mb-2"></i>
                             <h5>Crime & Public Safety</h5>
-                            <label for="q2" class="h5 text-justify question-text">Do you support Pres. Trumps decision to
+                            <label for="q2" class="h5 text-justify question-text">Do you support Pres. Trumps decision
+                                to
                                 withdraw from the Iran nuclear agreement?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -114,7 +99,8 @@
                                             class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id="b4" class="thumbs-btn border-0 rounded" data-id="1"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b4" class="thumbs-btn border-0 rounded" data-id="1"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +115,8 @@
                         <div class="card-body">
                             <i class="fa fa-fist-raised fa-3x mb-2"></i>
                             <h5>Social Issues</h5>
-                            <label for="q3" class="h5 text-justify question-text">Should the federal government provide more funding
+                            <label for="q3" class="h5 text-justify question-text">Should the federal government provide
+                                more funding
                                 to states to fight opioid addiction?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -137,7 +124,8 @@
                                             class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id="b6" class="thumbs-btn border-0 rounded" data-id="2"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b6" class="thumbs-btn border-0 rounded" data-id="2"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +140,8 @@
                         <div class="card-body">
                             <i class="fa fa-fist-raised fa-3x mb-2"></i>
                             <h5>Social Issues</h5>
-                            <label for="q4" class="h5 text-justify question-text">Should the federal government continue to fund
+                            <label for="q4" class="h5 text-justify question-text">Should the federal government continue
+                                to fund
                                 Planned Parenthood?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -160,7 +149,8 @@
                                             class="far fa-thumbs-up fa-2x"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button value="no" id="b8" class="thumbs-btn border-0 rounded" data-id="3"><i class="far fa-thumbs-down fa-2x"></i></button>
+                                    <button value="no" id="b8" class="thumbs-btn border-0 rounded" data-id="3"><i
+                                            class="far fa-thumbs-down fa-2x"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +165,8 @@
                         <div class="card-body">
                             <i class="fa fa-fist-raised fa-3x mb-2"></i>
                             <h5>Social Issues</h5>
-                            <label for="q5" class="h5 text-justify question-text">Should the federal government ban abortion after
+                            <label for="q5" class="h5 text-justify question-text">Should the federal government ban
+                                abortion after
                                 weeks gestation, with exceptions for cases of rape/incest and health
                                 complications</label>
                             <div class="row justify-content-center">
@@ -200,7 +191,8 @@
                         <div class="card-body">
                             <i class="fa fa-fist-raised fa-3x mb-2"></i>
                             <h5>Social Issues</h5>
-                            <label for="q6" class="h5 text-justify question-text">Should Congress create a path to citizenship for
+                            <label for="q6" class="h5 text-justify question-text">Should Congress create a path to
+                                citizenship for
                                 illegal/undocumented immigrants brought to the U.S. as children?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -224,7 +216,8 @@
                         <div class="card-body">
                             <i class="fa fa-hand-holding-usd fa-3x mb-2"></i>
                             <h5>Economy</h5>
-                            <label for="q7" class="h5 text-justify question-text">Should the federal government increase funding
+                            <label for="q7" class="h5 text-justify question-text">Should the federal government increase
+                                funding
                                 for transportation infrastructure, such as road repair and highway expansion?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -273,7 +266,8 @@
                         <div class="card-body">
                             <i class="fa fa-medkit fa-3x mb-2"></i>
                             <h5>Health Care</h5>
-                            <label for="q9" class="h5 text-justify question-text">Should the federal government amend the Affordable
+                            <label for="q9" class="h5 text-justify question-text">Should the federal government amend
+                                the Affordable
                                 Care Act/Obamacare by eliminating the essential health benefits insurance plans must
                                 cover?</label>
                             <div class="row justify-content-center">
@@ -298,7 +292,8 @@
                         <div class="card-body">
                             <i class="fa fa-leaf fa-3x mb-2"></i>
                             <h5>Energy & Environment</h5>
-                            <label for="q10" class="h5 text-justify question-text">Should the federal government do more to combat
+                            <label for="q10" class="h5 text-justify question-text">Should the federal government do more
+                                to combat
                                 climate change by taxing carbon emissions?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -322,7 +317,8 @@
                         <div class="card-body">
                             <i class="fa fa-leaf fa-3x mb-2"></i>
                             <h5>Energy & Environment</h5>
-                            <label for="q11" class="h5 text-justify question-text">Should the federal government do more to combat
+                            <label for="q11" class="h5 text-justify question-text">Should the federal government do more
+                                to combat
                                 climate change by providing subsidies for renewable energy?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -346,7 +342,8 @@
                         <div class="card-body">
                             <i class="fa fa-leaf fa-3x mb-2"></i>
                             <h5>Energy & Environment</h5>
-                            <label for="q12" class="h5 text-justify question-text">Do you agree with President Trump on withdrawing
+                            <label for="q12" class="h5 text-justify question-text">Do you agree with President Trump on
+                                withdrawing
                                 from the Paris climate agreement?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -370,7 +367,8 @@
                         <div class="card-body">
                             <i class="fa fa-user-graduate fa-3x mb-2"></i>
                             <h5>Education</h5>
-                            <label for="q13" class="h5 text-justify question-text">Should the federal government allow student
+                            <label for="q13" class="h5 text-justify question-text">Should the federal government allow
+                                student
                                 loan payments to be reduced based on income?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -394,7 +392,8 @@
                         <div class="card-body">
                             <i class="fa fa-hand-holding-usd fa-3x mb-2"></i>
                             <h5>Economy</h5>
-                            <label for="q14" class="h5 text-justify question-text">Should the federal government raise the minimum
+                            <label for="q14" class="h5 text-justify question-text">Should the federal government raise
+                                the minimum
                                 wage?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -418,7 +417,8 @@
                         <div class="card-body">
                             <i class="fa fa-hand-holding-usd fa-3x mb-2"></i>
                             <h5>Economy</h5>
-                            <label for="q15" class="h5 text-justify question-text">Should the federal government privatize
+                            <label for="q15" class="h5 text-justify question-text">Should the federal government
+                                privatize
                                 some or all of Social Security?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -442,7 +442,8 @@
                         <div class="card-body">
                             <i class="fa fa-bus-alt fa-3x mb-2"></i>
                             <h5>Recreation & Transportation</h5>
-                            <label for="q16" class="h5 text-justify question-text">Should the federal government increase funding
+                            <label for="q16" class="h5 text-justify question-text">Should the federal government
+                                increase funding
                                 for
                                 transportation infrastructure, such as road repair and highway expansion?</label>
                             <div class="row justify-content-center">
@@ -468,7 +469,8 @@
                         <div class="card-body">
                             <i class="fa fa-hand-holding-usd fa-3x mb-2"></i>
                             <h5>Economy</h5>
-                            <label for="q17" class="h5 text-justify question-text">Do you generally support higher tariffs on
+                            <label for="q17" class="h5 text-justify question-text">Do you generally support higher
+                                tariffs on
                                 imports
                                 from countries such as China, where we have a large trade deficit?</label>
                             <div class="row justify-content-center">
@@ -493,7 +495,8 @@
                         <div class="card-body">
                             <i class="fa fa-hand-holding-usd fa-3x mb-2"></i>
                             <h5>Economy</h5>
-                            <label for="q18" class="h5 text-justify question-text">Do you believe the Trump tax plan bill
+                            <label for="q18" class="h5 text-justify question-text">Do you believe the Trump tax plan
+                                bill
                                 passed in December helps middle income citizens?</label>
                             <div class="row justify-content-center">
                                 <div class="col">
@@ -542,7 +545,8 @@
                         <div class="card-body">
                             <i class="fa fa-fingerprint fa-3x mb-2"></i>
                             <h5>Crime & Public Safety</h5>
-                            <label for="q20" class="h5 text-justify question-text">Should the U.S. impose additional sanctions on
+                            <label for="q20" class="h5 text-justify question-text">Should the U.S. impose additional
+                                sanctions on
                                 Russia in retaliation for its aggressive action in Syria and the Ukraine?
                             </label>
                             <div class="row justify-content-center">
@@ -567,7 +571,8 @@
                         <div class="card-body">
                             <i class="fa fa-fingerprint fa-3x mb-2"></i>
                             <h5>Crime & Public Safety</h5>
-                            <label for="q21" class="h5 text-justify question-text">Should the government enforce federal marijuana
+                            <label for="q21" class="h5 text-justify question-text">Should the government enforce federal
+                                marijuana
                                 laws
                                 in states that have legalized marijuana?
                             </label>
@@ -627,47 +632,12 @@
                                         <h6 id="matchPercent" class="match-percentage card-subtitle mt-3"></h6>
                                     </div>
                                 </div>
-
-                                <!-- Individual Candidate Links -->
-                                <!-- <div class="card-footer">
-                                    <div class="row"> -->
-                                <!-- Individual Candidate Twitter -->
-                                <!-- <div class="col match-links match-twitter">
-                                            <a href="#" id="indCanTwitter"><i class="fab fa-twitter"></i></a>
-                                        </div> -->
-                                <!-- Individual Candidate Website -->
-                                <!-- <div class="col match-links match-website">
-                                            <a href="#" id="indCanWebsite"><i class="fas fa-globe"></i></a>
-                                        </div> -->
-                                <!-- Individual Candidate News -->
-                                <!-- <div class="col match-links match-news">
-                                            <a href="#" id="indCanNews"><i class="far fa-newspaper"></i></a>
-                                        </div> -->
-                                <!-- Individual Candidate Instagram -->
-                                <!-- <div class="col match-links match-insta">
-                                            <a href="#" id="indCanInsta"><i class="fab fa-instagram"></i></a>
-                                        </div> -->
-                                <!-- Link to Individual Candidate Profile -->
-                                <!-- This is where user can see more information on each candidate -->
-                                <!-- <div class="col match-links match-ellipsis" id="indCanProfile">
-                                            <a href="/corey-booker"><i class="fas fa-ellipsis-h"></i></a>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <!-- See All Candidates w/ Tooltip -->
                             <!-- Redirect to All Candidate HTML -->
-                            <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
-                                title="See List of All Candidates">View All Candidates
-                            </button>
-                            <!-- Save Results w/ Tooltip -->
-                            <!-- Redirect to Log In HTML -->
-                            <!-- <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom"
-                            title="Log In/Sign Up to See All of Your Results">
-                            Save Results
-                        </button> -->
+                            <a class="btn btn-primary" href="/allCandidates" title="See all candidates">Go to Candidates
+                                Page</a>
                         </div>
                     </div>
                 </div>
@@ -683,13 +653,14 @@
             <!-- FOOTER 'NAV' -->
             <div class="row footer-nav">
                 <div class="col">
-                    <a href="/aboutus.html" class="footer-links">About Us</a>
+                    <a href="/about-us" class="footer-links">About Us</a>
                 </div>
                 <div class="col">
-                    <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i
+                            class="fab fa-github fa-lg"></i></a>
                 </div>
                 <div class="col">
-                    <a href="/contact.html" class="footer-links">Contact</a>
+                    <a href="/contact-us" class="footer-links">Contact</a>
                 </div>
             </div>
             <!-- FOOTER COPYRIGHT -->
@@ -702,11 +673,13 @@
     </footer>
 
     <!-- Per bootstrap: jQuery, Popper, Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <!-- Chosen Stylesheet-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">

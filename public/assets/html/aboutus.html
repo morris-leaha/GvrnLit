@@ -6,16 +6,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
     <!-- LINK TO GOOGLE FONTS -->
     <!-- LINK TO FONT AWESOME -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Page Title -->
     <title>GvrnLit</title>
     <!-- Favicon -->
@@ -23,129 +22,87 @@
 </head>
 
 <body>
-
     <header>
-        <div class="home-pg-nav d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3">
-            <a href="index.html">
-                <img src="../images/gavel-stars_transparent.png" class="my-0 mr-md-auto" width="140" height="60"
+        <nav class="navigation navbar navbar-expand-md navbar-dark pt-2 pb-3 pr-3 pl-2 mb-3">
+            <!-- NAVBAR BRAND -->
+            <a class="navbar-brand" href="/index">
+                <img src="../images/gavel-stars_transparent.png" width="140" height="60"
                     class="d-inline-block align-top" alt="logo">
             </a>
-            <nav class="my-2 mx-auto">
-                <!-- <form class="form-inline choose-quiz-length">
-                    <div class="input-group">
-                        <select class="custom-select" id="chooseQuizLen" aria-label="User choose quiz length">
-                            <option selected>Choose Quiz Length...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-light" type="button">Take Our Quiz</button>
-                        </div>
-                    </div>
-                </form> -->
-
+            <!-- NAVBAR TOGGLER BUTTON -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- NAVBAR LINKS -->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto">
+                    <li id="navCandidates" class="nav-item">
+                        <a class="nav-link" href="/allCandidates" title="Click to See All Candidates">All Candidates</a>
+                    </li>
+                    <li id="navVotingInfo" class="nav-item">
+                        <a class="nav-link" href="/voting-info" title="Click for Voting Information">Voting
+                            Information</a>
+                    </li>
+                </ul>
                 <!-- TAKE QUIZ BUTTON -->
-                <a class="take-quizBTN btn btn-danger px-3" href="/quiz-ALL" title="Click here to find your match!">Take Our Quiz</a>
-                
-            </nav>
-            <!-- <a class="my-2 mx-2 px-3 btn btn-outline-light signin-btn" href="/signin" title="Click to Sign In">Sign In</a>
-            <a class="my-2 mx-2 btn btn-light signup-btn" href="/signup" title="Click to Sign Up">Sign Up</a> -->
-        </div>
+                <a class="take-quizBTN btn btn-danger px-3" href="/quiz-ALL" title="Click here to find your match!">Take
+                    Our Quiz</a>
+            </div>
+        </nav>
     </header>
-
     <div class="container">
-        <!-- CAROUSEL  -->
-        <br>
-        <main>
-            <div id="politicalPartyCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#politicalPartyCarousel" data-slide-to="0"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <!-- image 1 -->
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="../images/aboutus.jpg" alt="First slide" style="width:100%;">
-                    </div>
+        <div class="row justify-content-center">
+            <div class="col">
+                <h1 class="team text-center mt-0">Meet the Team</h1>
+                <!-- ABOUT US TEXT -->
+                <div class="text-justify">
+                    <p class="about mb-4"> We are a small team of Junior developers currently attending the
+                        Northwestern's
+                        Coding Bootcamp. We created this app because we believe that everyone should exercise their
+                        constitutional right
+                        to vote, but we also understand that politics can be overwhelming. With only roughly 60% of
+                        eligible voter turnout
+                        for the 2016 presidential election, GvrnLit hopes to encourage more individuals to vote and to
+                        vote with confidence!
+                    </p>
                 </div>
             </div>
-        </main>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <!-- ABOUT US text -->
-        <div class="text-center">
-            <p id="about"> We are a small team of Junior developers currently attending the Northwestern's
-                Coding Bootcamp. We created this app in-mind for making voting easier for the millennial population,
-                following basis of a dating app, GvrnLit matches users to the most likely 2020 presidential candidate based on their
-                views answered in our quiz. We believe that everyone should exercise their constitutional right to vote, but we also 
-                understand that politics can be overwhelming. With only roughly 60% of eligible voter turnout for the 2016 presidential 
-                election, GvrnLit hopes to encourage more individuals to vote and to vote with confidence!
-            </p>
-            <br>
-            <h1 id="team">Meet the Team</h1>
         </div>
         <!-- TEAM HEADSHOTS -->
-        <!-- row 1 -->
-        <br>
-        <br>
-        <div class="row text-center">
-            <div class="col-6">
-                <img src="../images/santiago.jpg" alt="santiago.jpg" class="rounded">
-                <br>
-                <h3>Santiago </h3>
-                <p id="profile">
-                    Back-end js, databases, frameworks, logic
-                </p>
+        <div class="row text-center mt-2">
+            <div class="col-lg-3 col-md-6">
+                <img src="../images/santiago.jpg" alt="santiago.jpg" class="rounded-circle team-img">
+                <h3 class="mt-2">Santiago </h3>
             </div>
-            <div class="col-6">
-                <img src="../images/nicole.jpg" alt="nicole.jpg" class="rounded">
-                <br>
-                <h3>Nicole</h3>
-                <p id="profile">
-                    Back-end js, databases, frameworks, logic
-                </p>
+            <div class="col-lg-3 col-md-6">
+                <img src="../images/nicole.jpg" alt="nicole.jpg" class="rounded-circle team-img">
+                <h3 class="mt-2">Nicole</h3>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="../images/leah.jpg" alt="leah.jpg" class="rounded-circle team-img">
+                <h3 class="mt-2">Leah</h3>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="../images/este.jpg" alt="este.jpg" class="rounded-circle team-img">
+                <h3 class="mt-2">Estevan </h3>
             </div>
         </div>
-        <br>
-        <br>
-        <!-- row 2 -->
-        <div class="row text-center">
-                <div class="col-6">
-                    <img src="../images/leah.jpg" alt="leah.jpg" class="rounded">
-                    <br>
-                    <h3>Leah</h3>
-                    <p id="profile">
-                        Front-end html, js, frameworks
-                    </p>
-                </div>
-                <div class="col-6">
-                    <img src="../images/este.jpg" alt="este.jpg" class="rounded">
-                    <br>
-                    <h3>Estevan </h3>
-                    <p id="profile">
-                        Front-end, images, styling
-                    </p>
-                </div>
-            </div>
     </div>
-
-
     <!-- FOOTER -->
-    <footer class="footer sticky-footer mt-5">
+    <footer class="footer sticky-footer mt-3">
         <div class="container text-center">
             <!-- FOOTER 'NAV' -->
             <div class="row footer-nav">
                 <div class="col">
-                    <a href="#" class="footer-links">About Us</a>
+                    <a href="/about-us" class="footer-links">About Us</a>
                 </div>
                 <div class="col">
-                    <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://github.com/morris-leaha/GvrnLit" class="footer-links"><i
+                            class="fab fa-github fa-lg"></i></a>
                 </div>
                 <div class="col">
-                    <a href="#" class="footer-links">Contact</a>
+                    <a href="/contact-us" class="footer-links">Contact</a>
                 </div>
             </div>
             <!-- FOOTER COPYRIGHT -->
@@ -156,16 +113,16 @@
             </div>
         </div>
     </footer>
-
     <!-- Per bootstrap: jQuery, Popper, Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- Our JS File -->
-    <script src="main.js"></script>
 </body>
 
 </html>
